@@ -70,7 +70,7 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
-Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
+This device is for shoppers anywhere they would use a shopping cart or a shopping basket.  Shoppers are placing items they want to buy into their cart or basket.  The device will show how many bags are likely needed to carry the groceries.  The goal is to make shopping easier, and to warn them if they are getting too many items for the amount of bags they have.  Using light in this lab, the light can blink to show the number of bags needed.  The light can also change color, going from blue to red as more bags are needed.
 
 \*\***Include a picture of your storyboard here**\*\*
 

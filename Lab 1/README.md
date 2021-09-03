@@ -70,11 +70,11 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
-This device is for shoppers anywhere they would use a shopping cart or a shopping basket.  Shoppers are placing items they want to buy into their cart or basket.  The device will show how many bags are likely needed to carry the groceries.  The goal is to make shopping easier, and to warn them if they are getting too many items for the amount of bags they have.  Using light in this lab, the light can blink to show the number of bags needed.  The light can also change color, going from blue to red as more bags are needed.
+This device is for shoppers anywhere they would use a shopping cart or a shopping basket.  Shoppers place the items they want to buy into their cart or basket. The light changes color, going from green to red as the shoppers desired budget is being reached.  When the price ceiling has been exceeded, the light blinks red and black.  So the light is green while a shopper has $10 (for example) in their cart, goes towards red as they accumulate more groceries, and finally goes to red and starts blinking when the shopper has $150 (or whatever budget they have chosen).
 
 \*\***Include a picture of your storyboard here**\*\*
 
-Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
+![IDDLab1Verplank](https://user-images.githubusercontent.com/89811189/132066877-0b8a4f12-ac38-495c-abd7-99c4526f1c5f.jpeg)
 
 \*\***Summarize feedback you got here.**\*\*
 

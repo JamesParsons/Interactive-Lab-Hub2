@@ -152,3 +152,15 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+![SupermarketAisleWithLightsAndText](https://user-images.githubusercontent.com/89811189/132107872-57e2a3b7-f208-4e4b-a1ff-fee00314eb81.jpg)
+
+![IDDLab1Verplank](https://user-images.githubusercontent.com/89811189/132066877-0b8a4f12-ac38-495c-abd7-99c4526f1c5f.jpeg)
+
+
+Photos:
+Supermarket Aisle: https://www.bing.com/images/search?view=detailV2&ccid=cGcueMKr&id=ACBAE9EAF25082B4C0DBD05253C51B79FB1C9C7D&thid=OIP.cGcueMKrmxi_UAVoMUBFgQHaFj&mediaurl=https%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f0%2f04%2fColes_South_City_aisle_1.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.70672e78c2ab9b18bf50056831404581%3frik%3dfZwc%252b3kbxVNS0A%26pid%3dImgRaw%26r%3d0&exph=1944&expw=2592&q=supermarket+aisle&simid=608048639173882608&FORM=IRPRST&ck=47901B42BEF6DE0B453CB1248DEC83F4&selectedIndex=19&qft=+filterui%3alicense-L2_L3&ajaxhist=0&ajaxserp=0
+
+Traffic light panel thing: https://www.bing.com/images/search?view=detailV2&ccid=G%2fHAD62V&id=B120816E14CC828A0516E5859C25FE5C675F4D8E&thid=OIP.G_HAD62Vn-YkSvpTkLZlsQAAAA&mediaurl=https%3a%2f%2fi.stack.imgur.com%2fG23CX.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.1bf1c00fad959fe6244afa5390b665b1%3frik%3djk1fZ1z%252bJZyF5Q%26pid%3dImgRaw%26r%3d0&exph=190&expw=400&q=panel+with+red+and+green+lights&simid=608053114529916119&FORM=IRPRST&ck=69D1EF5543B46F0E84387E4FD7846508&selectedIndex=3&qft=+filterui%3alicense-L2_L3&ajaxhist=0&ajaxserp=0
+
+Photos merged (poorly) and text added with microsoft paint program.

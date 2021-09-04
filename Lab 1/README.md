@@ -1,5 +1,4 @@
 
-!(https://github.com/JamesParsons/Interactive-Lab-Hu…ob/Fall2021/Lab%201/SupermarketAisle.jpg?raw=true)
 
 # Staging Interaction
 

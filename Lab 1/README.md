@@ -87,10 +87,16 @@ Shoppo Smart Cart.  This device is for shoppers anywhere they would use a shoppi
 
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
+Augustin got classmates to act it out too!
+https://user-images.githubusercontent.com/89811189/132266296-3060c6b8-3148-4a9c-8ebc-d66d6c235aee.mp4
+https://user-images.githubusercontent.com/89811189/132266296-3060c6b8-3148-4a9c-8ebc-d66d6c235aee.mp4
+
+
 \*\***Are there things that seemed better on paper than acted out?**\*\*
+The interactions seemed to go as we expected
 
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
-
+Keeping the lights hooded should make it so others can not see the lights in your cart as easily.
 
 ## Part C. Prototype the device
 
@@ -162,8 +168,6 @@ https://user-images.githubusercontent.com/89811189/132266290-853d0656-78a9-4cd9-
 
 
 https://user-images.githubusercontent.com/89811189/132266296-3060c6b8-3148-4a9c-8ebc-d66d6c235aee.mp4
-
-
 
 ![SupermarketAisleWithLightsAndText](https://user-images.githubusercontent.com/89811189/132107872-57e2a3b7-f208-4e4b-a1ff-fee00314eb81.jpg)
 

@@ -131,6 +131,8 @@ Think about the setting of the device: is the environment a place where the devi
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
+I collaborated with Agustin Forero, agf48@cornell.edu
+
 
 
 # Staging Interaction, Part 2 

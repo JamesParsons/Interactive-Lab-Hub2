@@ -71,6 +71,8 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
+I am collobarating with Agustin Forero, agf48@cornell.edu
+
 Shoppo Smart Cart.  This device is for shoppers anywhere they would use a shopping cart or a shopping basket.  Shoppers place the items they want to buy into their cart or basket. The light changes color, going from green to red as the shoppers desired budget is being reached.  When the price ceiling has been exceeded, the light blinks red and black.  So the light is green while a shopper has $10 (for example) in their cart, goes towards red as they accumulate more groceries, and finally gets to red and starts blinking when the shopper has $150 (or whatever budget they have chosen).
 ![SupermarketAisleWithLightsAndText](https://user-images.githubusercontent.com/89811189/132107872-57e2a3b7-f208-4e4b-a1ff-fee00314eb81.jpg)
 

@@ -157,6 +157,14 @@ Do last week’s assignment again, but this time:
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
 
+https://user-images.githubusercontent.com/89811189/132266290-853d0656-78a9-4cd9-b08a-4256fd9ca089.mp4
+
+
+
+https://user-images.githubusercontent.com/89811189/132266296-3060c6b8-3148-4a9c-8ebc-d66d6c235aee.mp4
+
+
+
 ![SupermarketAisleWithLightsAndText](https://user-images.githubusercontent.com/89811189/132107872-57e2a3b7-f208-4e4b-a1ff-fee00314eb81.jpg)
 
 ![IDDLab1Verplank](https://user-images.githubusercontent.com/89811189/132066877-0b8a4f12-ac38-495c-abd7-99c4526f1c5f.jpeg)

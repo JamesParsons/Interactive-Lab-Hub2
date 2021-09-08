@@ -108,6 +108,7 @@ We invented this tool for this lab!
 If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
+Tinkerbelle worked great once it was set up properly
 
 
 ## Part D. Wizard the device
@@ -129,6 +130,9 @@ Only now should you start worrying about what the device should look like. Devel
 Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
 
 \*\***Include sketches of what your device might look like here.**\*\*
+![IMG_2601](https://user-images.githubusercontent.com/89811189/132539628-fcb89de2-ec78-4f68-bdc8-8a6a17323b97.JPG)
+![IMG_2602](https://user-images.githubusercontent.com/89811189/132539640-64462e0d-586c-4a08-9887-ce1666056b75.JPG)
+
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 

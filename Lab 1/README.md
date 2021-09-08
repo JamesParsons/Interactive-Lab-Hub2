@@ -141,10 +141,13 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
+https://user-images.githubusercontent.com/89811189/132542256-54b56667-3202-4c78-b9b1-b356a0513531.mp4
+
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
 
 I collaborated with Agustin Forero, agf48@cornell.edu
+My wife Margaret Parsons was also kind enough to let me film her in her PJ's for the making of this Lab.
 
 
 

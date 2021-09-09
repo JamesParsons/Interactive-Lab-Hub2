@@ -161,6 +161,7 @@ This describes the second week's work for this lab activity.
 You will be assigned three partners from another group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
 
 \*\***Summarize feedback from your partners here.**\*\*
+The reviewers liked the idea but pointed out some of the shortcomings of our original design.  One reviewer also suggested that we update our storyboard to show different stages of the light.  A great suggestion that we have implemented below.  Another reviewer pointed out that items that need to be weighed would not work with this system  We have now implemented a connected scale feature into the cart to handle this problem.  
 
 ## Make it your own
 

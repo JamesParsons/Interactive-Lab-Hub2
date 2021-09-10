@@ -69,6 +69,7 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
+The setting of the interaction is the front door or any living space, and the area that immediately connects to it. The players in this scenario consist of a single person who is gathering their wallet, cellphone, mask, keys and other essential items on their way out in the morning. This individual is in a hurry, and in a moment of distraction, they leave their keys on the table before leaving their apartment. The door closes behind them and they are locked out. The main interactive devices are a proximity sensor built into the door handle that scans when the handle is turned, a fob on the users's key ring, and a light display built into the door.
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 

@@ -55,17 +55,6 @@ F) [Record the interaction](#part-f-record)
 Labs are due on Mondays. Make sure this page is linked to on your main class hub page.
 
 ## Part A. Plan 
-
-To stage the interaction with your interactive device, think about:
-
-_Setting:_ Where is this interaction happening? (e.g., a jungle, the kitchen) When is it happening?
-
-_Players:_ Who is involved in the interaction? Who else is there? If you reflect on the design of current day interactive devices like the Amazon Alexa, it’s clear they didn’t take into account people who had roommates, or the presence of children. Think through all the people who are in the setting.
-
-_Activity:_ What is happening between the actors?
-
-_Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening the fridge). 
-
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
@@ -74,6 +63,9 @@ The setting of the interaction is the front door or any living space, and the ar
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 
 \*\***Include a picture of your storyboard here**\*\*
+![IMG_5426](https://user-images.githubusercontent.com/89866019/132962939-ebd97e58-5874-4ae6-853b-f196a9b00754.jpg)
+
+![IMG_5427](https://user-images.githubusercontent.com/89866019/132963040-236dae70-616a-4b96-8d42-0d64f2fede2f.jpg)
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 
@@ -100,7 +92,7 @@ We invented this tool for this lab!
 If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
-
+The library was awesome once it was up an running. The node version worked right away. To use the python version we had to set up a virtual environment using python 3.9 first. Once we did that, it ran like a dream.
 
 ## Part D. Wizard the device
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 

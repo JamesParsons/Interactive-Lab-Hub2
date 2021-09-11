@@ -1,5 +1,6 @@
 
 
+
 # Staging Interaction
 
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
@@ -162,6 +163,9 @@ You will be assigned three partners from another group. Go to their github pages
 
 \*\***Summarize feedback from your partners here.**\*\*
 The reviewers liked the idea but pointed out some of the shortcomings of our original design.  One reviewer also suggested that we update our storyboard to show different stages of the light.  A great suggestion that we have implemented below.  Another reviewer pointed out that items that need to be weighed would not work with this system  We have now implemented a connected scale feature into the cart to handle this problem.  
+![VerplankPart2ArrowAdded](https://user-images.githubusercontent.com/89811189/132952872-4a01371c-7021-426f-bc00-d1d29cfb01b0.jpg)
+![CartRightsideUp](https://user-images.githubusercontent.com/89811189/132954859-159bcc94-5af9-4449-9693-d9f43660d4b7.jpeg)
+
 
 ## Make it your own
 

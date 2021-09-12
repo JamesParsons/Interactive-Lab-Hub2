@@ -83,7 +83,7 @@ This interaction played out very closely to the storyboarding because of how sim
 The library was awesome once it was up an running. The node version worked right away. To use the python version we had to set up a virtual environment using python 3.9 first. Once we did that, it ran like a dream.
 
 ## Part D. Wizard the device
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jdqyZfdY13Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/jdqyZfdY13Q
 
 ## Part E. Costume the device
 ![IMG_5437](https://user-images.githubusercontent.com/89866019/132998339-04291ce3-491b-42ec-bd2e-09bda43cd070.jpg)
@@ -91,7 +91,7 @@ The library was awesome once it was up an running. The node version worked right
 The biggest opportunity would be to integrate the device into the door itself, such that it is replaceable / exchangeable but also so that it is flush with the door surface to avoid accidentally knocking it off and onto the floor
 
 ## Part F. Record
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ESqlWmMiRpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/ESqlWmMiRpE
 
 # Staging Interaction, Part 2 
 

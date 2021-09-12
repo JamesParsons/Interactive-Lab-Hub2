@@ -77,6 +77,8 @@ Present your idea to the other people in your breakout room. You can just get fe
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
+This interaction played out very closely to the storyboarding because of how simple the basic premise is. ![IMG_5437](https://user-images.githubusercontent.com/89866019/132998332-7c03b23a-4ac2-4df4-be77-583a68464104.jpg)
+
 
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
 
@@ -98,11 +100,12 @@ The library was awesome once it was up an running. The node version worked right
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
+https://youtu.be/jdqyZfdY13Q
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
-
+-----------
 
 ## Part E. Costume the device
 
@@ -111,17 +114,15 @@ Only now should you start worrying about what the device should look like. Devel
 Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
 
 \*\***Include sketches of what your device might look like here.**\*\*
+![IMG_5437](https://user-images.githubusercontent.com/89866019/132998339-04291ce3-491b-42ec-bd2e-09bda43cd070.jpg)
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
-
+The biggest opportunity would be to integrate the device into the door itself, such that it is replaceable / exchangeable but also so that it is flush with the door surface to avoid accidentally knocking it off and onto the floor
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
-
-\*\***Please indicate anyone you collaborated with on this Lab.**\*\*
-Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
-
+https://youtu.be/ESqlWmMiRpE
 
 
 # Staging Interaction, Part 2 

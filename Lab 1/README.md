@@ -60,14 +60,10 @@ The interactive device can be anything *except* a computer, a tablet computer or
 \*\***Describe your setting, players, activity and goals here.**\*\*
 The setting of the interaction is the front door or any living space, and the area that immediately connects to it. The players in this scenario consist of a single person who is gathering their wallet, cellphone, mask, keys and other essential items on their way out in the morning. This individual is in a hurry, and in a moment of distraction, they leave their keys on the table before leaving their apartment. The door closes behind them and they are locked out. The main interactive devices are a proximity sensor built into the door handle that scans when the handle is turned, a fob on the users's key ring, and a light display built into the door.
 
-Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
-
 \*\***Include a picture of your storyboard here**\*\*
 ![IMG_5426](https://user-images.githubusercontent.com/89866019/132962939-ebd97e58-5874-4ae6-853b-f196a9b00754.jpg)
 
 ![IMG_5427](https://user-images.githubusercontent.com/89866019/132963040-236dae70-616a-4b96-8d42-0d64f2fede2f.jpg)
-
-Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
 
@@ -77,53 +73,25 @@ Present your idea to the other people in your breakout room. You can just get fe
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
-This interaction played out very closely to the storyboarding because of how simple the basic premise is. ![IMG_5437](https://user-images.githubusercontent.com/89866019/132998332-7c03b23a-4ac2-4df4-be77-583a68464104.jpg)
-
+This interaction played out very closely to the storyboarding because of how simple the basic premise is.
 
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
 
 
 ## Part C. Prototype the device
-
-You will be using your smartphone as a stand-in for the device you are prototyping. You will use the browser of your smart phone to act as a “light” and use a remote control interface to remotely change the light on that device. 
-
-Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/FAR-Lab/tinkerbelle).
-
-We invented this tool for this lab! 
-
-If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
-
 \*\***Give us feedback on Tinkerbelle.**\*\*
 The library was awesome once it was up an running. The node version worked right away. To use the python version we had to set up a virtual environment using python 3.9 first. Once we did that, it ran like a dream.
 
 ## Part D. Wizard the device
-Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
-
-\*\***Include your first attempts at recording the set-up video here.**\*\*
-https://youtu.be/jdqyZfdY13Q
-
-Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
-
-\*\***Show the follow-up work here.**\*\*
------------
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jdqyZfdY13Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Part E. Costume the device
-
-Only now should you start worrying about what the device should look like. Develop a costume so that you can use your phone as this device.
-
-Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
-
-\*\***Include sketches of what your device might look like here.**\*\*
 ![IMG_5437](https://user-images.githubusercontent.com/89866019/132998339-04291ce3-491b-42ec-bd2e-09bda43cd070.jpg)
 
-\*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 The biggest opportunity would be to integrate the device into the door itself, such that it is replaceable / exchangeable but also so that it is flush with the door surface to avoid accidentally knocking it off and onto the floor
 
 ## Part F. Record
-
-\*\***Take a video of your prototyped interaction.**\*\*
-https://youtu.be/ESqlWmMiRpE
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ESqlWmMiRpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Staging Interaction, Part 2 
 

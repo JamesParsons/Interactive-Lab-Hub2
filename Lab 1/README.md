@@ -174,6 +174,10 @@ Do last week’s assignment again, but this time:
 2) You can use any modality (e.g., vibration, sound) to prototype the behaviors! Again, be creative!
 3) We will be grading with an emphasis on creativity. 
 
+We have upgraded our unit to include weighted items and produce aisle items.  If the user adds something that is sold by weight the indicator will show the weight (ideally, although tinkerbelle can't do that yet).  If the participant adds something that is sold by unit then the light blinks once for each unit added, in a color indicative of the item.
+
+https://user-images.githubusercontent.com/89811189/133003584-a9b6fb07-64aa-465f-a6ec-2176f01e61fb.mp4
+
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
 
 https://user-images.githubusercontent.com/89811189/132266290-853d0656-78a9-4cd9-b08a-4256fd9ca089.mp4

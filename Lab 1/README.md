@@ -202,7 +202,7 @@ Photos merged (poorly) and text added with microsoft paint program.
 https://user-images.githubusercontent.com/89811189/132542256-54b56667-3202-4c78-b9b1-b356a0513531.mp4
 ![VerplankPart2ArrowAdded](https://user-images.githubusercontent.com/89811189/132952872-4a01371c-7021-426f-bc00-d1d29cfb01b0.jpg)
 ![CartRightsideUp](https://user-images.githubusercontent.com/89811189/132954859-159bcc94-5af9-4449-9693-d9f43660d4b7.jpeg)
-https://user-images.githubusercontent.com/89811189/133003584-a9b6fb07-64aa-465f-a6ec-2176f01e61fb.mp4
+
 
 https://user-images.githubusercontent.com/89811189/133003584-a9b6fb07-64aa-465f-a6ec-2176f01e61fb.mp4
 

@@ -173,6 +173,7 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 ![IDDLab1AugustinWhiteboard](https://user-images.githubusercontent.com/89811189/133009541-3f312dd1-0a85-413d-acb5-826156882b4c.jpeg)
+White board by Agustin Forero
 
 
 We have upgraded our unit to include weighted items and produce aisle items.  If the user adds something that is sold by weight the indicator will show the weight (ideally, although tinkerbelle can't do that yet).  If the participant adds something that is sold by unit then the light blinks once for each unit added, in a color indicative of the item.

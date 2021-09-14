@@ -99,16 +99,13 @@ This describes the second week's work for this lab activity.
 
 
 ## Prep (to be done before Lab on Wednesday)
-
-You will be assigned three partners from another group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
-
 \*\***Summarize feedback from your partners here.**\*\*
+Feedback indicated that the idea is extremely useful:  "universal usefulness".  
+Commenters indidcated that additional feedback such as sound effects would improve the prototype
+Users also suggested enabling the functionality for a greater number of devices. To illustrate this I added the image of a key, to make the particular item distinct to the user, and to pave the way for future iconographies associated with other possessions.
+Feedback on the story board was positive, and it captures the premise of the idea so I've not changed those.
 
-## Make it your own
-
-Do last week’s assignment again, but this time: 
-1) It doesn’t have to (just) use light, 
-2) You can use any modality (e.g., vibration, sound) to prototype the behaviors! Again, be creative!
-3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+Second iteration, incorporating the use of sound effects and visual icons to show the user which item they are leaving their home without:
+https://youtu.be/t2US512mUjg 

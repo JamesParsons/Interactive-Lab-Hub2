@@ -60,7 +60,7 @@ backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
 
-q = width / 4
+q1 = width / 4
 q2 = (width / 4) * 2
 q3 = (width / 4) * 3
 

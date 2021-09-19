@@ -68,7 +68,7 @@ while True:
     sectime = int(time.localtime().tm_sec)
     if sectime >= 0 and sectime < 30:
         #groundhue = 120 + (sectime * 4)
-    #else:
+    else:
         #midstep = sectime - 30
         #groundhue = 240 - (midstep * 4)
     draw.rectangle((0, 0, width, height), outline=0, fill="#FFFFFF")

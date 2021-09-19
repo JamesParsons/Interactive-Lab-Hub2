@@ -65,12 +65,6 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
-    sectime = int(time.localtime().tm_sec)
-    if sectime >= 0 and sectime < 30:
-        #groundhue = 120 + (sectime * 4)
-    else:
-        #midstep = sectime - 30
-        #groundhue = 240 - (midstep * 4)
     draw.rectangle((0, 0, width, height), outline=0, fill="#FFFFFF")
     
     # Display image.

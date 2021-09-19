@@ -66,10 +66,14 @@ while True:
 
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
     sectime = int(time.localtime().tm_sec)
+    mintime = int(time.localtime().tm_min)
+    hrtime = int(time.localtime().tm_hour)
     
-    ghue = sectime*4    
+    ghue = sectime * 4    
+    rhue = mintime * 4
+    bhue = hrtime * 10
     
-    draw.rectangle((0, 0, width, height), outline=0, fill=(0,ghue,0))
+    draw.rectangle((0, 0, width, height), outline=0, fill=(rhue,ghue,bhue))
     
     # Display image.
     disp.image(image, rotation)

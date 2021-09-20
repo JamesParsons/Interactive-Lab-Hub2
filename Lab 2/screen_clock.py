@@ -67,14 +67,9 @@ while True:
 
     # Shell scripts for system monitoring from here:
     # https://unix.stackexchange.com/questions/119126/command-to-display-memory-usage-USD-usage-and-WTTR-load
-    cmd = "hostname -I | cut -d' ' -f1"
-    IP = "IP: " + subprocess.check_output(cmd, shell=True).decode("utf-8")
-    cmd = "curl -s wttr.in/?format=2"
-    WTTR = subprocess.check_output(cmd, shell=True).decode("utf-8")
-    cmd = 'curl -s ils.rate.sx/1USD | cut -c1-6'
-    USD = "$1USD = ₪" + subprocess.check_output(cmd, shell=True).decode("utf-8") + "ILS"
-    cmd = "cat /sys/class/thermal/thermal_zone0/temp |  awk '{printf \"CPU Temp: %.1f C\", $(NF-0) / 1000}'" 
-    Temp = subprocess.check_output(cmd, shell=True).decode("utf-8")
+    IP = "line test 1"
+    WTTR = "line test 2"
+    USD = "line test 3"
 
     # Write four lines of text.
     y = top

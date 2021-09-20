@@ -78,8 +78,6 @@ while True:
     draw.text((x, y), WTTR, font=font, fill="#FFFF00")
     y += font.getsize(WTTR)[1]
     draw.text((x, y), USD, font=font, fill="#0000FF")
-    y += font.getsize(USD)[1]
-    draw.text((x, y), Temp, font=font, fill="#FF00FF")
 
     # Display image.
     disp.image(image, rotation)

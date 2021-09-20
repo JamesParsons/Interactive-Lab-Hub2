@@ -73,12 +73,14 @@ countdown_timer = 22075000
 penalties_tracker = 0
 bonuses_tracker = 0
 
+IP = "line test 1"
+PENALTIES = "PENALTIES: "
+BONUSES = "BONUSES: "
 while True:
    # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     # Shell scripts for system monitoring from here:
-    IP = "line test 1"
     
     # penalties tracker 
     if buttonA.value and not buttonB.value:
@@ -94,6 +96,7 @@ while True:
 
     # Write four lines of text.
     # draw.text((x, y), IP, font=font, fill="#FFFFFF")
+    x = 0
     y = top
     y += font.getsize(IP)[1]
     draw.text((x, y), str(countup_timer), font=font, fill="#FFFF00")
@@ -102,14 +105,19 @@ while True:
     draw.text((x, y), str(countdown_timer), font=font, fill="#FFFF00")
     
     y += font.getsize(IP)[1]
-    draw.text((x, y), "PENALTIES: " + str(penalties_tracker), font=font, fill="#FFFF00")
+    draw.text((x, y), BONUSES, font=font, fill="#20b2aa")
+    x = font.getsize(BONUSES)
+    draw.text((x, y), str(bonuses_tracker), font=font, fill="#FFFF00")
     
+    x = 0
     y += font.getsize(IP)[1]
-    draw.text((x, y), "BONUSES: " + str(bonuses_tracker), font=font, fill="#FFFF00")
+    draw.text((x, y), "PENALTIES: ", font=font, fill="#FF0000")
+    x = font.getsize(PENALTIES)
+    draw.text((x, y), str(penalties_tracker), font=font, fill="#FFFF00")
 
     # Display image.
     disp.image(image, rotation)
-    time.sleep(0.1)
+    time.sleep(1)
     countup_timer += 1
     countdown_timer -= 1
 

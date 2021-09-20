@@ -64,6 +64,9 @@ q1 = width / 4
 q2 = (width / 4) * 2
 q3 = (width / 4) * 3
 
+h1 = height / 3
+h2 = (height / 3) * 2
+
 if width > height:
     bounder = height
 else:
@@ -98,6 +101,10 @@ while True:
         #draw.arc((center-40,center+10,center+40,center+40),start=1,end=-1,fill=(rhue,0,0),width=3)
         #draw.arc((center-40,center+10,center+40,center+40),start=.5,end=-.5,fill=(rhue,0,0),width=3)
         draw.ellipse((center-40,center+10,center+40,center+40),fill=(rhue,0,0),width=3)
+    draw.rectangle((center + 70, 0, width, h1), fill=(rhue,0,0))
+    draw.rectangle((center + 70, h1, width, h2), fill=(0,ghue,0))
+    draw.rectangle((center + 70, h2, width, height), fill=(0,0,bhue))
+    
     
     
     # Display image.

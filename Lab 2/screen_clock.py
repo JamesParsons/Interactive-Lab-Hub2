@@ -106,7 +106,7 @@ while True:
     x = 0
     y = top
     y += font.getsize(IP)[1]
-    draw.text((x, y), LIVED, font=font, fill="#20b2aa")
+    draw.text((x, y), LIVED, font=font, fill="#44c17b")
     x = font.getsize(LIVED)[0]
     draw.text((x, y), str(countup_timer), font=font, fill="#FFFF00")
     

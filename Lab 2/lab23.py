@@ -64,6 +64,12 @@ q1 = width / 4
 q2 = (width / 4) * 2
 q3 = (width / 4) * 3
 
+if width > height:
+    bounder = height
+else:
+    bounder = width
+center = bounder / 2
+
 
 while True:
     # Draw a black filled box to clear the image.

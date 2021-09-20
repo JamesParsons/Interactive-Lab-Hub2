@@ -60,6 +60,9 @@ backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
 
+####################################################
+
+# calculate these values once instead of inside the timer
 q1 = width / 4
 q2 = (width / 4) * 2
 q3 = (width / 4) * 3
@@ -73,24 +76,29 @@ else:
     bounder = width
 center = bounder / 2
 
+#####################################################
 
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
+    
+    # get seconds, minutes, and hour as integer values
     sectime = int(time.localtime().tm_sec)
     mintime = int(time.localtime().tm_min)
     hrtime = int(time.localtime().tm_hour)
     
-    ghue = sectime * 4    
-    rhue = mintime * 4
+    rhue = sectime * 4
+    ghue = mintime * 4    
     bhue = hrtime * 10
     
+    # face
     draw.ellipse((center-60,center-60,center+60,center+60),outline=(rhue,ghue,bhue), fill=(None))
     
     if sectime == 0:
-        draw.rectangle((0,0,width,height),fill=(0,0,0))
+        #draw.rectangle((0,0,width,height),fill=(0,0,0))
+        draw.rectangle((0, 0, width, height), outline=0, fill=0)
     
     if sectime >= 10 and sectime <= 59: # left eye
         draw.ellipse((center-40,center-40,center-10,center-10),outline=(rhue,ghue,bhue), fill=(None))
@@ -104,6 +112,7 @@ while True:
         #draw.arc((center-40,center+10,center+40,center+40),start=1,end=-1,fill=(rhue,0,0),width=3)
         #draw.arc((center-40,center+10,center+40,center+40),start=.5,end=-.5,fill=(rhue,0,0),width=3)
         draw.ellipse((center-40,center+10,center+40,center+40),outline=(rhue,ghue,bhue),fill=(rhue,0,0),width=3)
+    # show colors of sec, min, hr on side
     draw.rectangle((center + 70, 0, width, h1), fill=(rhue,0,0))
     draw.rectangle((center + 70, h1, width, h2), fill=(0,ghue,0))
     draw.rectangle((center + 70, h2, width, height), fill=(0,0,bhue))

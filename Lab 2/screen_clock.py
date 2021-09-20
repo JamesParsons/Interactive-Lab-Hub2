@@ -117,7 +117,7 @@ while True:
 
     # Display image.
     disp.image(image, rotation)
-    time.sleep(1)
+    time.sleep(.1)
     countup_timer += 1
     countdown_timer -= 1
 

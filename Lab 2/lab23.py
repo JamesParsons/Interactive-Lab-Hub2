@@ -97,7 +97,7 @@ while True:
     if sectime >= 40 and sectime <= 59: # lips
         #draw.arc((center-40,center+10,center+40,center+40),start=1,end=-1,fill=(rhue,0,0),width=3)
         #draw.arc((center-40,center+10,center+40,center+40),start=.5,end=-.5,fill=(rhue,0,0),width=3)
-        draw.ellipse((center-40,center+10,center+40,center+40),start=.5,end=-.5,fill=(rhue,0,0),width=3)
+        draw.ellipse((center-40,center+10,center+40,center+40),fill=(rhue,0,0),width=3)
     
     
     # Display image.

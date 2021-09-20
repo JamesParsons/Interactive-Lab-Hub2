@@ -83,15 +83,15 @@ while True:
     # penalties tracker 
     if buttonA.value and not buttonB.value:
         penalties_tracker   += 1
-        disp.fill(255,0,0)
+        disp.fill(color(255,0,0))
     # benefits tracker 
     if buttonB.value and not buttonA.value:
         bonuses_tracker     += 1
-        disp.fill(0,255,0)
+        disp.fill(color(0,255,0))
     if not buttonA.value and not buttonB.value:
-        disp.fill(color565(0,0,0))
+        disp.fill(color565(color(0,0,0)))
     
-    
+
     # Write four lines of text.
     # draw.text((x, y), IP, font=font, fill="#FFFFFF")
     y = top
@@ -102,7 +102,7 @@ while True:
     draw.text((x, y), str(countdown_timer), font=font, fill="#FFFF00")
     
     y += font.getsize(IP)[1]
-    draw.text((x, y), str(penalties_tracker), font=font, fill="#FFFF00")
+    draw.text((x, y), "str(penalties_tracker), font=font, fill="#FFFF00")
     
     y += font.getsize(IP)[1]
     draw.text((x, y), str(bonuses_tracker), font=font, fill="#FFFF00")

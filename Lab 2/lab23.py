@@ -89,18 +89,21 @@ while True:
     
     draw.ellipse((center-60,center-60,center+60,center+60),outline=(rhue,ghue,bhue), fill=(None))
     
-    if sectime >= 0 and sectime <= 59: # left eye
+    if sectime == 0:
+        draw.rectangle((0,0,width,height),fill=(0,0,0))
+    
+    if sectime >= 10 and sectime <= 59: # left eye
         draw.ellipse((center-40,center-40,center-10,center-10),outline=(rhue,ghue,bhue), fill=(None))
-    if sectime >= 10 and sectime <= 59: # right eye
+    if sectime >= 20 and sectime <= 59: # right eye
         draw.ellipse((center+10,center-40,center+40,center-10),outline=(rhue,ghue,bhue), fill=(None))
-    if sectime >= 20 and sectime <= 59: #left ball
+    if sectime >= 30 and sectime <= 59: #left ball
         draw.ellipse((center-32,center-24,center-18,center-10),outline=(rhue,ghue,bhue), fill=(0,0,bhue))
-    if sectime >= 30 and sectime <= 59: # right ball
+    if sectime >= 40 and sectime <= 59: # right ball
         draw.ellipse((center+18,center-24,center+32,center-10),outline=(rhue,ghue,bhue), fill=(0,0,bhue))
-    if sectime >= 40 and sectime <= 59: # lips
+    if sectime >= 50 and sectime <= 59: # lips
         #draw.arc((center-40,center+10,center+40,center+40),start=1,end=-1,fill=(rhue,0,0),width=3)
         #draw.arc((center-40,center+10,center+40,center+40),start=.5,end=-.5,fill=(rhue,0,0),width=3)
-        draw.ellipse((center-40,center+10,center+40,center+40),fill=(rhue,0,0),width=3)
+        draw.ellipse((center-40,center+10,center+40,center+40),outline=(rhue,ghue,bhue),fill=(rhue,0,0),width=3)
     draw.rectangle((center + 70, 0, width, h1), fill=(rhue,0,0))
     draw.rectangle((center + 70, h1, width, h2), fill=(0,ghue,0))
     draw.rectangle((center + 70, h2, width, height), fill=(0,0,bhue))

@@ -1,5 +1,5 @@
-import time
 import subprocess
+import time
 import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
@@ -68,7 +68,10 @@ buttonB = digitalio.DigitalInOut(board.D24)
 buttonA.switch_to_input()
 buttonB.switch_to_input()
 
-current_run = 0
+countup_timer = 0
+countdown_timer = 22075000
+penalties_tracker = 0
+bonuses_tracker = 0
 
 while True:
    # Draw a black filled box to clear the image.
@@ -76,16 +79,38 @@ while True:
 
     # Shell scripts for system monitoring from here:
     IP = "line test 1"
-
+    
+    # penalties tracker 
+    if buttonA.value and not buttonB.value:
+        penalties_tracker   += 1
+        disp.fill(255,0,0)
+    # benefits tracker 
+    if buttonB.value and not buttonA.value:
+        bonuses_tracker     += 1
+        disp.fill(0,255,0)
+    if not buttonA.value and not buttonB.value:
+        disp.fill(color565(0,0,0))
+    
+    
     # Write four lines of text.
     # draw.text((x, y), IP, font=font, fill="#FFFFFF")
     y = top
     y += font.getsize(IP)[1]
-    draw.text((x, y), str(current_run), font=font, fill="#FFFF00")
+    draw.text((x, y), str(countup_timer), font=font, fill="#FFFF00")
+    
+    y += font.getsize(IP)[1]
+    draw.text((x, y), str(countdown_timer), font=font, fill="#FFFF00")
+    
+    y += font.getsize(IP)[1]
+    draw.text((x, y), str(penalties_tracker), font=font, fill="#FFFF00")
+    
+    y += font.getsize(IP)[1]
+    draw.text((x, y), str(bonuses_tracker), font=font, fill="#FFFF00")
 
     # Display image.
     disp.image(image, rotation)
     time.sleep(0.1)
-    current_run += 1
+    countup_timer += 1
+    countdown_timer -= 1
 
 

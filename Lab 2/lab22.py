@@ -74,8 +74,8 @@ while True:
     mintime = int(time.localtime().tm_min)
     hrtime = int(time.localtime().tm_hour)
     
-    ghue = sectime * 4    
-    rhue = mintime * 4
+    rhue = sectime * 4
+    ghue = mintime * 4    
     bhue = hrtime * 10
     
     draw.rectangle((0, 0, q1, height), outline=0, fill=(rhue,120,120))

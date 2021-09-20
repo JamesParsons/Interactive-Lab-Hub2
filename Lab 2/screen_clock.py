@@ -76,6 +76,10 @@ bonuses_tracker = 0
 IP = "line test 1"
 PENALTIES = "PENALTIES: "
 BONUSES = "BONUSES: "
+LIVED   = "LIVED: "
+TO_LIVE = "TO_LIVE: "
+
+
 while True:
    # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
@@ -85,11 +89,14 @@ while True:
     # penalties tracker 
     if buttonA.value and not buttonB.value:
         penalties_tracker   += 1
+        countdown_timer     -= 1000
         disp.fill(color565(255,0,0))
-    # benefits tracker 
+    
     if buttonB.value and not buttonA.value:
         bonuses_tracker     += 1
+        countdown_timer     += 1000
         disp.fill(color565(0,255,0))
+    
     if not buttonA.value and not buttonB.value:
         disp.fill(color565(0,0,0))
     
@@ -99,11 +106,17 @@ while True:
     x = 0
     y = top
     y += font.getsize(IP)[1]
+    draw.text((x, y), LIVED, font=font, fill="#20b2aa")
+    x = font.getsize(LIVED)[0]
     draw.text((x, y), str(countup_timer), font=font, fill="#FFFF00")
     
+    x = 0
     y += font.getsize(IP)[1]
+    draw.text((x, y), TO_LIVE, font=font, fill="#20b2aa")
+    x = font.getsize(TO_LIVE)[0]
     draw.text((x, y), str(countdown_timer), font=font, fill="#FFFF00")
     
+    x = 0
     y += font.getsize(IP)[1]
     draw.text((x, y), BONUSES, font=font, fill="#20b2aa")
     x = font.getsize(BONUSES)[0]

@@ -83,13 +83,13 @@ while True:
     # penalties tracker 
     if buttonA.value and not buttonB.value:
         penalties_tracker   += 1
-        disp.fill(color(255,0,0))
+        disp.fill(color565(255,0,0))
     # benefits tracker 
     if buttonB.value and not buttonA.value:
         bonuses_tracker     += 1
-        disp.fill(color(0,255,0))
+        disp.fill(color565(0,255,0))
     if not buttonA.value and not buttonB.value:
-        disp.fill(color565(color(0,0,0)))
+        disp.fill(color565(0,0,0))
     
 
     # Write four lines of text.

@@ -206,6 +206,8 @@ https://youtu.be/ij1MbLAuQHk
 
 2. Look at and give feedback on the Part G. for at least 2 other people in the class (and get 2 people to comment on your Part G!)
 
+This is a wonderful, hysterical, and morbidly fatalistic idea for a clock.  The entire premise is great, and would be useful if we could figure out how many days we had in advance.  Might be useful just as a reminder to eat better and exercise.  The proposals for the improvements seem aspirational.  The idea of being able to click on future days to add a plan is cool.  I am wondering how the controls would work without the addition of a mouse or scroll wheel.  Does the social media connect to past days or future days or both?  Since the idea is so dark, maybe when you made a bad plan (drinking, going to the county fair, interacting with inlaws) it could blink to warn you against such actions, or pre-add some penalty days.  I wish it had a camera and computer vision and could follow you live and warn you off from unhealthy or bad decisions.  Like Greek food. A great video, no narration needed.  Continuing to set a high bar in both creativity and execution. -- James Parsons
+
 # Lab 2 Part 2
 
 Pull Interactive Lab Hub updates to your repo.

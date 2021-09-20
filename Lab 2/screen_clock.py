@@ -60,6 +60,9 @@ backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
 
+current_run = 0
+
+
 while True:
     # Draw a black filled box to clear the image.
    # Draw a black filled box to clear the image.
@@ -68,18 +71,20 @@ while True:
     # Shell scripts for system monitoring from here:
     # https://unix.stackexchange.com/questions/119126/command-to-display-memory-usage-USD-usage-and-WTTR-load
     IP = "line test 1"
-    WTTR = "line test 2"
-    USD = "line test 3"
+    # WTTR = "line test 2"
+    # USD = "line test 3"
 
     # Write four lines of text.
     y = top
-    draw.text((x, y), IP, font=font, fill="#FFFFFF")
+    # draw.text((x, y), IP, font=font, fill="#FFFFFF")
     y += font.getsize(IP)[1]
-    draw.text((x, y), WTTR, font=font, fill="#FFFF00")
-    y += font.getsize(WTTR)[1]
-    draw.text((x, y), USD, font=font, fill="#0000FF")
+    draw.text((x, y), current_run, font=font, fill="#FFFF00")
+    # y += font.getsize(WTTR)[1]
+    # draw.text((x, y), USD, font=font, fill="#0000FF")
 
     # Display image.
     disp.image(image, rotation)
     time.sleep(0.1)
+    current_run += 1
+
 

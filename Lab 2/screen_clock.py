@@ -4,6 +4,8 @@ import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
+from adafruit_rgb_display.rgb import color565
+import webcolors
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
@@ -60,27 +62,26 @@ backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
 
+# these setup the code for our buttons and the backlight and tell the pi to treat the GPIO pins as digitalIO vs analogIO
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonB.switch_to_input()
+
 current_run = 0
 
-
 while True:
-    # Draw a black filled box to clear the image.
    # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     # Shell scripts for system monitoring from here:
-    # https://unix.stackexchange.com/questions/119126/command-to-display-memory-usage-USD-usage-and-WTTR-load
     IP = "line test 1"
-    # WTTR = "line test 2"
-    # USD = "line test 3"
 
     # Write four lines of text.
-    y = top
     # draw.text((x, y), IP, font=font, fill="#FFFFFF")
+    y = top
     y += font.getsize(IP)[1]
     draw.text((x, y), str(current_run), font=font, fill="#FFFF00")
-    # y += font.getsize(WTTR)[1]
-    # draw.text((x, y), USD, font=font, fill="#0000FF")
 
     # Display image.
     disp.image(image, rotation)

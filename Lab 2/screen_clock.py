@@ -106,13 +106,13 @@ while True:
     
     y += font.getsize(IP)[1]
     draw.text((x, y), BONUSES, font=font, fill="#20b2aa")
-    x = font.getsize(BONUSES)
+    x = font.getsize(BONUSES)[0]
     draw.text((x, y), str(bonuses_tracker), font=font, fill="#FFFF00")
     
     x = 0
     y += font.getsize(IP)[1]
     draw.text((x, y), "PENALTIES: ", font=font, fill="#FF0000")
-    x = font.getsize(PENALTIES)
+    x = font.getsize(PENALTIES)[0]
     draw.text((x, y), str(penalties_tracker), font=font, fill="#FFFF00")
 
     # Display image.

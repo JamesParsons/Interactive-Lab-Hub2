@@ -78,7 +78,7 @@ while True:
     y = top
     # draw.text((x, y), IP, font=font, fill="#FFFFFF")
     y += font.getsize(IP)[1]
-    draw.text((x, y), current_run, font=font, fill="#FFFF00")
+    draw.text((x, y), str(current_run), font=font, fill="#FFFF00")
     # y += font.getsize(WTTR)[1]
     # draw.text((x, y), USD, font=font, fill="#0000FF")
 

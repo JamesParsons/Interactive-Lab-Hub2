@@ -190,10 +190,14 @@ After that, Git will ask you to login to your GitHub account to push the updates
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
-\*\*\***Take a video of your PiClock.**\*\*\*
+## HEALTHCLOCK 
+https://youtu.be/ij1MbLAuQHk
+(deathclock?)
+
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
+![IMG_5B369E2EBCF0-1](https://user-images.githubusercontent.com/89866019/134070922-af6ac3b2-c6da-4483-a36a-36bc91e886c7.jpeg)
 
 
 # Prep for Part 2

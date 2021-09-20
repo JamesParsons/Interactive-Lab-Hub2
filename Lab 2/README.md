@@ -2,7 +2,9 @@
 
 Does it feel like time is moving strangely during this semester?
 
-For our first Pi project, we will pay homage to the [timekeeping devices of old](https://en.wikipedia.org/wiki/History_of_timekeeping_devices) by making simple clocks.
+For our first Pi project, we will pa
+
+y homage to the [timekeeping devices of old](https://en.wikipedia.org/wiki/History_of_timekeeping_devices) by making simple clocks.
 
 It is worth spending a little time thinking about ho
 
@@ -196,8 +198,18 @@ After that, Git will ask you to login to your GitHub account to push the updates
 
 https://user-images.githubusercontent.com/89811189/134022805-66cf971c-0ec5-4d82-b7e3-da4da31ec142.mp4
 
+https://user-images.githubusercontent.com/89811189/134027273-6d3102c3-9ff0-4d13-a0ba-33c31a502961.mp4
+
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
+
+I have started trying to program what I would like the clock to do.  I want the seconds to be measured by a sheep jumping over a fence as it approaches.  That happens over and over in about a 6-10 second loop.  The color and vibrancy of the ground changes depending on what minute of the hour it is, going from dull green to vibrant green and back again.  The sun / moon also changes in vibrancy in a similar way (the sun is up from 6am-6pm, the moon the rest of the time).  The top picture is what it looks like without using canvas, the bottom picture is with using canvas.  I would also like to add functionality where when you press one of the buttons it shows you the time in an easy to read format.  Like a field with a certian number of flowers and sheep or something to denote the time at that instant.
+
+I am hoping I can connect to raspberry pi from my computer while at home so I can do proper testing this week. (I have not been able to test it without everything crashing because of issues with tkinter / draw / canvas / sleep interactions).
+
+![Sheep1](https://user-images.githubusercontent.com/89811189/134028889-51710181-d542-475d-902b-de6068b63740.PNG)
+
+![Sheep2](https://user-images.githubusercontent.com/89811189/134028907-4c0c3b30-19c7-454f-9efc-b5788c0406bf.PNG)
 
 
 # Prep for Part 2

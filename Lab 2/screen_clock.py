@@ -102,10 +102,10 @@ while True:
     draw.text((x, y), str(countdown_timer), font=font, fill="#FFFF00")
     
     y += font.getsize(IP)[1]
-    draw.text((x, y), "str(penalties_tracker), font=font, fill="#FFFF00")
+    draw.text((x, y), "PENALTIES: " + str(penalties_tracker), font=font, fill="#FFFF00")
     
     y += font.getsize(IP)[1]
-    draw.text((x, y), str(bonuses_tracker), font=font, fill="#FFFF00")
+    draw.text((x, y), "BONUSES: " + str(bonuses_tracker), font=font, fill="#FFFF00")
 
     # Display image.
     disp.image(image, rotation)

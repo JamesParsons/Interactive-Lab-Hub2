@@ -85,6 +85,31 @@ def drawSheep(width, height, sectime, rhue, ghue,bhue):
     draw.ellipse(((width * .14),(height * .57),(width * .14) + thickness,(height * .57) + thickness), outline=None,fill=(255,255,255)) 
 ##################################################################################
 
+def drawFence(width, height, sectime):
+    
+    if sectime == 1:
+        width = width - (width*.1)
+    if sectime == 2:
+        width = width - (width*.2)
+    if sectime == 3:
+        width = width - (width*.3)
+    if sectime == 4:
+        width = width - (width*.4) 
+    if sectime == 5:
+        width = width - (width*.5)
+    if sectime == 6:
+        width = width - (width*.6)
+    if sectime == 7:
+        width = width - (width*.7)
+    if sectime == 8:
+        width = width - (width*.8)
+    if sectime == 9:
+        width = width - (width*.9) 
+        
+    draw.rectangle(((width), (height*.63), (width+.125), (height*.75)), outline=0, fill=(255,255,255))
+     
+    
+##############################################################
 
 def drawGround(width, height, ghue):
     
@@ -151,6 +176,7 @@ while True:
     #draw.rectangle((0, (height*.75), width, height), outline=0, fill=(rhue,ghue,bhue))
     
     drawGround(width, height, ghue)
+    drawFence(width, height, sectime)
     drawSheep(width, height, sectime, rhue, ghue, bhue)
     drawSun(width,height, hrtime)
     

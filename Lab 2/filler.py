@@ -108,7 +108,7 @@ def drawFence(width, height, sectime):
     if sectime == 9:
         start = width - (width*.9) 
         
-    draw.rectangle(((0), (0), (100), (100)), outline=0, fill=(255,255,255))
+    draw.rectangle(((start), (0), (start + 100), (100)), outline=0, fill=(255,255,255))
      
     
 ##############################################################

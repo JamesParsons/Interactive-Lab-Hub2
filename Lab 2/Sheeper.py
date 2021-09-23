@@ -4,6 +4,7 @@ import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
+import tkinter
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
@@ -77,6 +78,25 @@ else:
 center = bounder / 2
 
 #####################################################
+
+root = Tk()
+screenwidth= root.winfo_screenwidth() 
+screenheight= root.winfo_screenheight()
+
+print(screenwidth, screenheight)
+
+newwidth = screenwidth
+newheight = screenheight
+canvas = Canvas(root, width=newwidth, height=newheight)
+canvas.pack()
+
+width = newwidth
+height = newheight
+
+#sky
+canvas.create_rectangle(0,0,newwidth,newheight,fill="#00CDFF")
+canvas.update()
+
 
 while True:
     # Draw a black filled box to clear the image.

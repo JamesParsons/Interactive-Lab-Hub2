@@ -63,7 +63,7 @@ def drawSheep(width, height, rhue, ghue,bhue):
     offset1 = (width * .0125)
     
     # y+ goes down, x+ goes right
-    draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(rhue,ghue,bhue))
+    draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(255,255,255))
     draw.rectangle(((width*.1375),(height*.63)+thickness,(width*.15),(height*.75)), outline=0, fill=(255,255,255)),
     draw.ellipse(((width * .1),(height * .65),(width * .1) + thickness,(height * .65) + thickness), outline=None,fill=(255,255,255)), # LL
     draw.ellipse(((width * .1125),(height * .64),(width * .1125) + thickness,(height * .64) + thickness), outline=None,fill=(255,255,255)), #LM
@@ -73,6 +73,21 @@ def drawSheep(width, height, rhue, ghue,bhue):
     draw.ellipse(((width * .125),(height * .60),(width * .125) + thickness,(height * .60) + thickness), outline=None,fill=(255,255,255)), #UR
     draw.ellipse(((width * .14),(height * .57),(width * .14) + thickness,(height * .57) + thickness), outline=None,fill=(255,255,255)) 
 ##################################################################################
+
+
+def drawGround(width, height, ghue):
+    
+    # want the grass to get brighter green then darker again
+    #if minute >= 0 and minute < 30:
+        #groundhue = 120 + (minute * 4)
+    #else:
+        #midstep = minute - 30
+        #groundhue = 240 - (midstep * 4)
+           
+    #hexcolor = "#%02x%02x%02x" % (0, groundhue, 0)       
+    draw.rectangle((0,(height * .75),width, height),outline=None, fill=(0,ghue,bhue))
+
+##############################################################################
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
@@ -116,8 +131,9 @@ while True:
         #draw.ellipse((center-40,center+10,center+40,center+40),outline=(rhue,ghue,bhue),fill=(rhue,0,0),width=3)
    
     
-    draw.rectangle((0, (height*.75), width, height), outline=0, fill=(rhue,ghue,bhue))
+    #draw.rectangle((0, (height*.75), width, height), outline=0, fill=(rhue,ghue,bhue))
     
+    drawGround(width, height, ghue)
     drawSheep(width, height, rhue, ghue, bhue)
     
     # Display image.

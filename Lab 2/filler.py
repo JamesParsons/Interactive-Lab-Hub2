@@ -161,6 +161,7 @@ def drawFence(width, height, sectime, mintime):
    
     elif mintime >= 50 and mintime < 60:
     # y+ goes down, x+ goes right
+        print(mintime)
         draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(115,103,21))
         draw.rectangle(((width*.1375),(height*.63)+thickness,(width*.15),(height*.75)), outline=0, fill=(115,103,21)),
         draw.ellipse(((width * .1),(height * .65),(width * .1) + thickness,(height * .65) + thickness), outline=None,fill=(115,103,21)), # LL
@@ -171,7 +172,7 @@ def drawFence(width, height, sectime, mintime):
         draw.ellipse(((width * .125),(height * .60),(width * .125) + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UR
         draw.ellipse(((width * .1),(height * .57),(width * .12) + thickness,(height * .57) + thickness), outline=None,fill=(115,103,21))         
       
-    print(mintime)
+    
     
 ##############################################################
 

@@ -88,25 +88,25 @@ def drawSheep(width, height, sectime, rhue, ghue,bhue):
 def drawFence(width, height, sectime):
     
     if sectime == 1:
-        width = width - (width*.1)
+        start = width - (width*.1)
     if sectime == 2:
-        width = width - (width*.2)
+        start = width - (width*.2)
     if sectime == 3:
-        width = width - (width*.3)
+        start = width - (width*.3)
     if sectime == 4:
-        width = width - (width*.4) 
+        start = width - (width*.4) 
     if sectime == 5:
-        width = width - (width*.5)
+        start = width - (width*.5)
     if sectime == 6:
-        width = width - (width*.6)
+        start = width - (width*.6)
     if sectime == 7:
-        width = width - (width*.7)
+        start = width - (width*.7)
     if sectime == 8:
-        width = width - (width*.8)
+        start = width - (width*.8)
     if sectime == 9:
-        width = width - (width*.9) 
+        start = width - (width*.9) 
         
-    draw.rectangle(((width), (height*.63), (width+.125), (height*.75)), outline=0, fill=(255,255,255))
+    draw.rectangle(((start), (height*.63), (start+.05), (height*.75)), outline=0, fill=(255,255,255))
      
     
 ##############################################################

@@ -38,7 +38,7 @@ width = disp.height
 rotation = 90
 
 # Get drawing object to draw on image.
-draw = ImageDraw.Draw(image)
+#draw = ImageDraw.Draw(image)
 
 # Draw a black filled box to clear the image.
 #draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))

@@ -56,7 +56,7 @@ x = 0
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 
 #################################################################################
-def drawSheep(width, height, sectime, rhue, ghue,bhue):
+def drawSheep(width, height, sectime):
     
     # format is xstart = start x position.   xend = start position + thickness
     thickness = width * .03

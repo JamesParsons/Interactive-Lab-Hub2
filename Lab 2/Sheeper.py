@@ -34,46 +34,46 @@ disp = st7789.ST7789(
 # Make sure to create image with mode 'RGB' for full color.
 height = disp.width  # we swap height/width to rotate it to landscape!
 width = disp.height
-#image = Image.new("RGB", (width, height))
+image = Image.new("RGB", (width, height))
 rotation = 90
 
-# make the root window
-root = Tk()
-root.state('zoomed')
+## make the root window
+#root = Tk()
+#root.state('zoomed')
 
-#getting screen width and height of display
-screenwidth= root.winfo_screenwidth() 
-screenheight= root.winfo_screenheight()
+##getting screen width and height of display
+#screenwidth= root.winfo_screenwidth() 
+#screenheight= root.winfo_screenheight()
 
-print(screenwidth, screenheight)
+#print(screenwidth, screenheight)
 
-newwidth = screenwidth
-newheight = screenheight
+#newwidth = screenwidth
+#newheight = screenheight
 
-canvas = Canvas(root, width=newwidth, height=newheight)
-canvas.pack()
+#canvas = Canvas(root, width=newwidth, height=newheight)
+#canvas.pack()
 
-width = newwidth
-height = newheight
+#width = newwidth
+#height = newheight
 
 # Get drawing object to draw on image.
 #draw = ImageDraw.Draw(image)
 
-## Draw a black filled box to clear the image.
-#draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-#disp.image(image, rotation)
-## Draw some shapes.
-## First define some constants to allow easy resizing of shapes.
-#padding = -2
-#top = padding
-#bottom = height - padding
-## Move left to right keeping track of the current x position for drawing shapes.
-#x = 0
+# Draw a black filled box to clear the image.
+draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+disp.image(image, rotation)
+# Draw some shapes.
+# First define some constants to allow easy resizing of shapes.
+padding = -2
+top = padding
+bottom = height - padding
+# Move left to right keeping track of the current x position for drawing shapes.
+x = 0
 
-# Alternatively load a TTF font.  Make sure the .ttf font file is in the
-# same directory as the python script!
-# Some other nice fonts to try: http://www.dafont.com/bitmap.php
-#font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
+#Alternatively load a TTF font.  Make sure the .ttf font file is in the
+#same directory as the python script!
+#Some other nice fonts to try: http://www.dafont.com/bitmap.php
+##font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
@@ -115,8 +115,8 @@ while True:
     
     
     #sky
-    canvas.create_rectangle(0,0,newwidth,newheight,fill="#00CDFF")
-    canvas.update()    
+    #canvas.create_rectangle(0,0,newwidth,newheight,fill="#00CDFF")
+    #canvas.update()    
     
     
     # Display image.

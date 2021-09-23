@@ -141,6 +141,7 @@ while True:
     
     drawGround(width, height, ghue)
     drawSheep(width, height, rhue, ghue, bhue)
+    drawSun(width,height, hrtime)
     
     # Display image.
     disp.image(image, rotation)

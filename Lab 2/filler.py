@@ -90,8 +90,10 @@ def drawGround(width, height, ghue):
 ##############################################################################
     
 def drawSun(width, height, hrtime):
+    # 165 - 255 on the r and g as the same
+    shue = (hrtime *7.5) + 165
     #width*.85,height*-.25,width*1.15,height*.25
-    draw.ellipse((width*.85,height*-.25,width*1.15,height*.25), outline=None,fill=(255,255,255)), #LR
+    draw.ellipse((width*.85,height*-.25,width*1.15,height*.25), outline=None,fill=(shue,shue,0)), #LR
     
 ##########################################################
 

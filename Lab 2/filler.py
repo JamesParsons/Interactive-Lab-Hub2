@@ -56,11 +56,14 @@ x = 0
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 
 #################################################################################
-def drawSheep(width, height, rhue, ghue,bhue):
+def drawSheep(width, height, sectime, rhue, ghue,bhue):
     
     # format is xstart = start x position.   xend = start position + thickness
     thickness = width * .03
     offset1 = (width * .0125)
+    
+    if sectime == 5:
+        height = height - (height*.03)
     
     # y+ goes down, x+ goes right
     draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(255,255,255))
@@ -90,9 +93,7 @@ def drawGround(width, height, ghue):
 ##############################################################################
     
 def drawSun(width, height, hrtime):
-    # 165 - 255 on the r and g as the same
-    shue = (hrtime *7) + 171
-    #width*.85,height*-.25,width*1.15,height*.25
+    shue = (hrtime *7) + 171  # gets yellow value according to hrtime (it gets brighter)
     draw.ellipse((width*.85,height*-.25,width*1.15,height*.25), outline=None,fill=(shue,shue,0)), #LR
     
 ##########################################################
@@ -142,7 +143,7 @@ while True:
     #draw.rectangle((0, (height*.75), width, height), outline=0, fill=(rhue,ghue,bhue))
     
     drawGround(width, height, ghue)
-    drawSheep(width, height, rhue, ghue, bhue)
+    drawSheep(width, height, sectime, rhue, ghue, bhue)
     drawSun(width,height, hrtime)
     
     # Display image.

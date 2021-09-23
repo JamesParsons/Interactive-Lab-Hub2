@@ -34,7 +34,7 @@ disp = st7789.ST7789(
 # Make sure to create image with mode 'RGB' for full color.
 height = disp.width  # we swap height/width to rotate it to landscape!
 width = disp.height
-image = Image.new("RGB", (width, height))
+#image = Image.new("RGB", (width, height))
 rotation = 90
 
 # make the root window

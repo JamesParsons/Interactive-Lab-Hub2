@@ -4,7 +4,6 @@ import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
-from tkinter import *
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
@@ -34,20 +33,20 @@ disp = st7789.ST7789(
 # Make sure to create image with mode 'RGB' for full color.
 height = disp.width  # we swap height/width to rotate it to landscape!
 width = disp.height
-#image = Image.new("RGB", (width, height))
+image = Image.new("RGB", (width, height))
 rotation = 90
 
 # Get drawing object to draw on image.
-#draw = ImageDraw.Draw(image)
+draw = ImageDraw.Draw(image)
 
 # Draw a black filled box to clear the image.
-#draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-#disp.image(image, rotation)
+draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+disp.image(image, rotation)
 # Draw some shapes.
 # First define some constants to allow easy resizing of shapes.
-#padding = -2
-#top = padding
-#bottom = height - padding
+padding = -2
+top = padding
+bottom = height - padding
 # Move left to right keeping track of the current x position for drawing shapes.
 x = 0
 
@@ -79,15 +78,49 @@ center = bounder / 2
 
 #####################################################
 
-root = Tk()
-canvas = Canvas(root, width=newwidth, height=newheight)
-canvas.pack()
-
 while True:
     # Draw a black filled box to clear the image.
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+
+    #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
+    
+    # get seconds, minutes, and hour as integer values
+    sectime = int(time.localtime().tm_sec)
+    mintime = int(time.localtime().tm_min)
+    hrtime = int(time.localtime().tm_hour)
+    
+    rhue = sectime * 4
+    ghue = mintime * 4    
+    bhue = hrtime * 10
+    
+    # face
+    draw.ellipse((center-60,center-60,center+60,center+60),outline=(rhue,ghue,bhue), fill=(None))
+    
+    if sectime == 0:
+        #draw.rectangle((0,0,width,height),fill=(0,0,0))
+        draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    
+    if sectime >= 10 and sectime <= 59: # left eye
+        draw.ellipse((center-40,center-40,center-10,center-10),outline=(rhue,ghue,bhue), fill=(None))
+    if sectime >= 20 and sectime <= 59: # right eye
+        draw.ellipse((center+10,center-40,center+40,center-10),outline=(rhue,ghue,bhue), fill=(None))
+    if sectime >= 30 and sectime <= 59: #left ball
+        draw.ellipse((center-32,center-24,center-18,center-10),outline=(rhue,ghue,bhue), fill=(0,0,bhue))
+    if sectime >= 40 and sectime <= 59: # right ball
+        draw.ellipse((center+18,center-24,center+32,center-10),outline=(rhue,ghue,bhue), fill=(0,0,bhue))
+    if sectime >= 50 and sectime <= 59: # lips
+        #draw.arc((center-40,center+10,center+40,center+40),start=1,end=-1,fill=(rhue,0,0),width=3)
+        #draw.arc((center-40,center+10,center+40,center+40),start=.5,end=-.5,fill=(rhue,0,0),width=3)
+        draw.ellipse((center-40,center+10,center+40,center+40),outline=(rhue,ghue,bhue),fill=(rhue,0,0),width=3)
+    # show colors of sec, min, hr on side
+    draw.rectangle((center + 70, 0, width, h1), fill=(rhue,0,0))
+    draw.rectangle((center + 70, h1, width, h2), fill=(0,ghue,0))
+    draw.rectangle((center + 70, h2, width, height), fill=(0,0,bhue))
+    
+    draw.rectangle(0,(height * .75),width, height,outline=None, fill=(rhue,ghue,bhue))
     
     
     
     # Display image.
-    #disp.image(image, rotation)
+    disp.image(image, rotation)
     time.sleep(1)

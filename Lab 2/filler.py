@@ -242,7 +242,7 @@ while True:
     
     drawGround(width, height, ghue)
     drawFence(width, height, sectime, mintime)
-    drawSheep(width, height, sectime, rhue, ghue, bhue)
+    drawSheep(width, height, sectime)
     drawSun(width,height, hrtime)
     
     # Display image.

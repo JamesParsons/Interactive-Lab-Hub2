@@ -167,6 +167,8 @@ while True:
     mintime = int(time.localtime().tm_min)
     hrtime = int(time.localtime().tm_hour)
     
+    sectime = sectime%10
+    
     rhue = sectime * 4
     ghue = mintime * 4    
     bhue = hrtime * 10

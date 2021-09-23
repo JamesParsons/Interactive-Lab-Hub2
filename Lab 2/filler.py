@@ -117,7 +117,7 @@ while True:
     draw.rectangle((center + 70, h1, width, h2), fill=(0,ghue,0))
     draw.rectangle((center + 70, h2, width, height), fill=(0,0,bhue))
     
-    draw.rectangle(0,(height * .75),width, height,outline=None, fill=(rhue,ghue,bhue))
+    draw.rectangle((0,(height * .75),width, height), fill=(rhue,ghue,bhue))
     
     
     

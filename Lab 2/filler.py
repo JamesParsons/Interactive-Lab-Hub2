@@ -89,43 +89,6 @@ def drawSheep(width, height, sectime):
 
     
 #################################################################################
-#def drawSheep(width, height, sectime):
-    
-    ## format is xstart = start x position.   xend = start position + thickness
-    #thickness = width * .03
-    #offset1 = (width * .0125)
-    
-    #if sectime == 1:
-        #start = width - (width*.4)
-    #if sectime == 2:
-        #start = width - (width*.5)
-    #if sectime == 3:
-        #start = width - (width*.6)
-    #if sectime == 4:
-        #start = width - (width*.7) 
-    #if sectime == 5:
-        #start = width - (width*.8)
-    #if sectime == 6:
-        #start = width - (width*.9)
-    #if sectime == 7:
-        #start = width 
-    #if sectime == 8:
-        #start = width - (width*.1)
-    #if sectime == 9:
-        #start = width - (width*.2)
-    #if sectime == 0:
-        #start = width - (width*.3)       
-    
-    ## y+ goes down, x+ goes right
-    #draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(255,255,255))
-    #draw.rectangle(((width*.1375),(height*.63)+thickness,(width*.15),(height*.75)), outline=0, fill=(255,255,255)),
-    #draw.ellipse(((width * .1),(height * .65),(width * .1) + thickness,(height * .65) + thickness), outline=None,fill=(255,255,255)), # LL
-    #draw.ellipse(((width * .1125),(height * .64),(width * .1125) + thickness,(height * .64) + thickness), outline=None,fill=(255,255,255)), #LM
-    #draw.ellipse(((width * .125),(height * .65),(width * .125) + thickness,(height * .65) + thickness), outline=None,fill=(255,255,255)), #LR
-    #draw.ellipse(((width * .1),(height * .60),(width * .1) + thickness,(height * .60) + thickness), outline=None,fill=(255,255,255)), #UL
-    #draw.ellipse(((width * .1125),(height * .59),(width * .1125) + thickness,(height * .59) + thickness), outline=None,fill=(255,255,255)), #UM
-    #draw.ellipse(((width * .125),(height * .60),(width * .125) + thickness,(height * .60) + thickness), outline=None,fill=(255,255,255)), #UR
-    #draw.ellipse(((width * .14),(height * .57),(width * .14) + thickness,(height * .57) + thickness), outline=None,fill=(255,255,255)) 
 
 #############################################################################
 
@@ -159,18 +122,18 @@ def drawFence(width, height, sectime, mintime):
     if mintime >= 0 and mintime < 50:   
         draw.rectangle(((start), (height*.63), (start + 20), (height*.75)), outline=0, fill=(45,55,195))
    
-    elif mintime >= 50 and mintime < 60:
+    if mintime >= 50 and mintime < 60:
     # y+ goes down, x+ goes right
-        print(mintime)
-        draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(115,103,21))
-        draw.rectangle(((width*.1375),(height*.63)+thickness,(width*.15),(height*.75)), outline=0, fill=(115,103,21)),
-        draw.ellipse(((width * .1),(height * .65),(width * .1) + thickness,(height * .65) + thickness), outline=None,fill=(115,103,21)), # LL
-        draw.ellipse(((width * .1125),(height * .64),(width * .1125) + thickness,(height * .64) + thickness), outline=None,fill=(115,103,21)), #LM
-        draw.ellipse(((width * .125),(height * .65),(width * .125) + thickness,(height * .65) + thickness), outline=None,fill=(115,103,21)), #LR
-        draw.ellipse(((width * .1),(height * .60),(width * .1) + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UL
-        draw.ellipse(((width * .1125),(height * .59),(width * .1125) + thickness,(height * .59) + thickness), outline=None,fill=(115,103,21)), #UM
-        draw.ellipse(((width * .125),(height * .60),(width * .125) + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UR
-        draw.ellipse(((width * .1),(height * .57),(width * .12) + thickness,(height * .57) + thickness), outline=None,fill=(115,103,21))         
+        #print(mintime)
+        draw.rectangle(((width*.1125)+start, (height*.63)+thickness, (width*.125)+start, (height*.75)), outline=0, fill=(115,103,21))
+        draw.rectangle(((width*.1375)+start,(height*.63)+thickness,(width*.15)+start,(height*.75)), outline=0, fill=(115,103,21)),
+        draw.ellipse(((width * .1)+start,(height * .65),(width * .1)+start + thickness,(height * .65) + thickness), outline=None,fill=(115,103,21)), # LL
+        draw.ellipse(((width * .1125)+start,(height * .64),(width * .1125)+start + thickness,(height * .64) + thickness), outline=None,fill=(115,103,21)), #LM
+        draw.ellipse(((width * .125)+start,(height * .65),(width * .125)+start + thickness,(height * .65) + thickness), outline=None,fill=(115,103,21)), #LR
+        draw.ellipse(((width * .1)+start,(height * .60),(width * .1)+start + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UL
+        draw.ellipse(((width * .1125)+start,(height * .59),(width * .1125)+start + thickness,(height * .59) + thickness), outline=None,fill=(115,103,21)), #UM
+        draw.ellipse(((width * .125)+start,(height * .60),(width * .125)+start + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UR
+        draw.ellipse(((width * .1)+start,(height * .57),(width * .12)+start + thickness,(height * .57) + thickness), outline=None,fill=(115,103,21))         
       
     
     
@@ -185,8 +148,10 @@ def drawGround(width, height, ghue):
         #midstep = minute - 30
         #groundhue = 240 - (midstep * 4)
            
-    #hexcolor = "#%02x%02x%02x" % (0, groundhue, 0)       
-    draw.rectangle((0,(height * .75),width, height),outline=None, fill=(0,ghue,bhue))
+    #hexcolor = "#%02x%02x%02x" % (0, groundhue, 0) 
+    #ground
+    draw.rectangle((0,(height * .75),width, height),outline=None, fill=(0,ghue,0))
+    #sky
     draw.rectangle((0,(0),width, (height*.75)),outline=None, fill=(90,180,225))
 
 ##############################################################################
@@ -234,7 +199,7 @@ while True:
     sectime = sectime%10
     
     rhue = sectime * 4
-    ghue = mintime * 4    
+    ghue = (mintime * 2) + 120   
     bhue = hrtime * 10
     
 

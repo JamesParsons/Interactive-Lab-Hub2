@@ -88,6 +88,12 @@ def drawGround(width, height, ghue):
     draw.rectangle((0,(height * .75),width, height),outline=None, fill=(0,ghue,bhue))
 
 ##############################################################################
+    
+def drawSun(width, height, hrtime):
+    #width*.85,height*-.25,width*1.15,height*.25
+    draw.ellipse((width*.85,height*-.25,width*1.15,height*.25), outline=None,fill=(255,255,255)), #LR
+    
+##########################################################
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)

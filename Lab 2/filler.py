@@ -89,43 +89,43 @@ def drawSheep(width, height, sectime, rhue, ghue,bhue):
 
     
 #################################################################################
-def drawSheep(width, height, sectime):
+#def drawSheep(width, height, sectime):
     
-    # format is xstart = start x position.   xend = start position + thickness
-    thickness = width * .03
-    offset1 = (width * .0125)
+    ## format is xstart = start x position.   xend = start position + thickness
+    #thickness = width * .03
+    #offset1 = (width * .0125)
     
-    if sectime == 1:
-        start = width - (width*.4)
-    if sectime == 2:
-        start = width - (width*.5)
-    if sectime == 3:
-        start = width - (width*.6)
-    if sectime == 4:
-        start = width - (width*.7) 
-    if sectime == 5:
-        start = width - (width*.8)
-    if sectime == 6:
-        start = width - (width*.9)
-    if sectime == 7:
-        start = width 
-    if sectime == 8:
-        start = width - (width*.1)
-    if sectime == 9:
-        start = width - (width*.2)
-    if sectime == 0:
-        start = width - (width*.3)       
+    #if sectime == 1:
+        #start = width - (width*.4)
+    #if sectime == 2:
+        #start = width - (width*.5)
+    #if sectime == 3:
+        #start = width - (width*.6)
+    #if sectime == 4:
+        #start = width - (width*.7) 
+    #if sectime == 5:
+        #start = width - (width*.8)
+    #if sectime == 6:
+        #start = width - (width*.9)
+    #if sectime == 7:
+        #start = width 
+    #if sectime == 8:
+        #start = width - (width*.1)
+    #if sectime == 9:
+        #start = width - (width*.2)
+    #if sectime == 0:
+        #start = width - (width*.3)       
     
-    # y+ goes down, x+ goes right
-    draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(255,255,255))
-    draw.rectangle(((width*.1375),(height*.63)+thickness,(width*.15),(height*.75)), outline=0, fill=(255,255,255)),
-    draw.ellipse(((width * .1),(height * .65),(width * .1) + thickness,(height * .65) + thickness), outline=None,fill=(255,255,255)), # LL
-    draw.ellipse(((width * .1125),(height * .64),(width * .1125) + thickness,(height * .64) + thickness), outline=None,fill=(255,255,255)), #LM
-    draw.ellipse(((width * .125),(height * .65),(width * .125) + thickness,(height * .65) + thickness), outline=None,fill=(255,255,255)), #LR
-    draw.ellipse(((width * .1),(height * .60),(width * .1) + thickness,(height * .60) + thickness), outline=None,fill=(255,255,255)), #UL
-    draw.ellipse(((width * .1125),(height * .59),(width * .1125) + thickness,(height * .59) + thickness), outline=None,fill=(255,255,255)), #UM
-    draw.ellipse(((width * .125),(height * .60),(width * .125) + thickness,(height * .60) + thickness), outline=None,fill=(255,255,255)), #UR
-    draw.ellipse(((width * .14),(height * .57),(width * .14) + thickness,(height * .57) + thickness), outline=None,fill=(255,255,255)) 
+    ## y+ goes down, x+ goes right
+    #draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(255,255,255))
+    #draw.rectangle(((width*.1375),(height*.63)+thickness,(width*.15),(height*.75)), outline=0, fill=(255,255,255)),
+    #draw.ellipse(((width * .1),(height * .65),(width * .1) + thickness,(height * .65) + thickness), outline=None,fill=(255,255,255)), # LL
+    #draw.ellipse(((width * .1125),(height * .64),(width * .1125) + thickness,(height * .64) + thickness), outline=None,fill=(255,255,255)), #LM
+    #draw.ellipse(((width * .125),(height * .65),(width * .125) + thickness,(height * .65) + thickness), outline=None,fill=(255,255,255)), #LR
+    #draw.ellipse(((width * .1),(height * .60),(width * .1) + thickness,(height * .60) + thickness), outline=None,fill=(255,255,255)), #UL
+    #draw.ellipse(((width * .1125),(height * .59),(width * .1125) + thickness,(height * .59) + thickness), outline=None,fill=(255,255,255)), #UM
+    #draw.ellipse(((width * .125),(height * .60),(width * .125) + thickness,(height * .60) + thickness), outline=None,fill=(255,255,255)), #UR
+    #draw.ellipse(((width * .14),(height * .57),(width * .14) + thickness,(height * .57) + thickness), outline=None,fill=(255,255,255)) 
 
 #############################################################################
 
@@ -187,6 +187,7 @@ def drawGround(width, height, ghue):
            
     #hexcolor = "#%02x%02x%02x" % (0, groundhue, 0)       
     draw.rectangle((0,(height * .75),width, height),outline=None, fill=(0,ghue,bhue))
+    draw.rectangle((0,(0),width, (height*.75)),outline=None, fill=(90,180,225))
 
 ##############################################################################
     

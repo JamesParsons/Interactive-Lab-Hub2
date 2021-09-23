@@ -62,15 +62,15 @@ def drawSheep(width, height, sectime, rhue, ghue,bhue):
     thickness = width * .03
     offset1 = (width * .0125)
     
-    if sectime == 5:
+    if sectime == 4:
         height = height - (height*.1)
-    if sectime == 6:
+    if sectime == 5:
         height = height - (height*.2)
-    if sectime == 7:
+    if sectime == 6:
         height = height - (height*.3)
-    if sectime == 8:
+    if sectime == 7:
         height = height - (height*.2) 
-    if sectime == 9:
+    if sectime == 8:
         height = height - (height*.1)        
     
     # y+ goes down, x+ goes right

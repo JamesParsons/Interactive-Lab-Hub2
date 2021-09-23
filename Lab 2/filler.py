@@ -132,7 +132,8 @@ def drawSheep(width, height, sectime):
 def drawFence(width, height, sectime, mintime):
     
     start = (width*.9)
-    
+    thickness = width * .03
+    offset1 = (width * .0125)    
     
     if sectime == 1:
         start = width - (width*.4)

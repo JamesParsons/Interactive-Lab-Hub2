@@ -86,11 +86,7 @@ def drawSheep(width, height, sectime, rhue, ghue,bhue):
 ##################################################################################
     
 #################################################################################
-def drawSheep(width, height, sectime, rhue, ghue,bhue):
-    
-    # format is xstart = start x position.   xend = start position + thickness
-    thickness = width * .03
-    offset1 = (width * .0125)
+
     
 #################################################################################
 def drawSheep(width, height, sectime):
@@ -133,7 +129,7 @@ def drawSheep(width, height, sectime):
 
 #############################################################################
 
-def drawFence(width, height, sectime):
+def drawFence(width, height, sectime, mintime):
     
     start = (width*.9)
     
@@ -158,18 +154,21 @@ def drawFence(width, height, sectime):
         start = width - (width*.2)
     if sectime == 0:
         start = width - (width*.3)
-        
+    if mintime >= 0 and mintime < 50:   
+        draw.rectangle(((start), (height*.63), (start + 20), (height*.75)), outline=0, fill=(45,55,195))
+   
+    elif mintime >= 50 and mintime < 60:
     # y+ goes down, x+ goes right
-    draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(115,103,21))
-    draw.rectangle(((width*.1375),(height*.63)+thickness,(width*.15),(height*.75)), outline=0, fill=(115,103,21)),
-    draw.ellipse(((width * .1),(height * .65),(width * .1) + thickness,(height * .65) + thickness), outline=None,fill=(115,103,21)), # LL
-    draw.ellipse(((width * .1125),(height * .64),(width * .1125) + thickness,(height * .64) + thickness), outline=None,fill=(115,103,21)), #LM
-    draw.ellipse(((width * .125),(height * .65),(width * .125) + thickness,(height * .65) + thickness), outline=None,fill=(115,103,21)), #LR
-    draw.ellipse(((width * .1),(height * .60),(width * .1) + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UL
-    draw.ellipse(((width * .1125),(height * .59),(width * .1125) + thickness,(height * .59) + thickness), outline=None,fill=(115,103,21)), #UM
-    draw.ellipse(((width * .125),(height * .60),(width * .125) + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UR
-    draw.ellipse(((width * .1),(height * .57),(width * .12) + thickness,(height * .57) + thickness), outline=None,fill=(115,103,21))         
-        
+        draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(115,103,21))
+        draw.rectangle(((width*.1375),(height*.63)+thickness,(width*.15),(height*.75)), outline=0, fill=(115,103,21)),
+        draw.ellipse(((width * .1),(height * .65),(width * .1) + thickness,(height * .65) + thickness), outline=None,fill=(115,103,21)), # LL
+        draw.ellipse(((width * .1125),(height * .64),(width * .1125) + thickness,(height * .64) + thickness), outline=None,fill=(115,103,21)), #LM
+        draw.ellipse(((width * .125),(height * .65),(width * .125) + thickness,(height * .65) + thickness), outline=None,fill=(115,103,21)), #LR
+        draw.ellipse(((width * .1),(height * .60),(width * .1) + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UL
+        draw.ellipse(((width * .1125),(height * .59),(width * .1125) + thickness,(height * .59) + thickness), outline=None,fill=(115,103,21)), #UM
+        draw.ellipse(((width * .125),(height * .60),(width * .125) + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UR
+        draw.ellipse(((width * .1),(height * .57),(width * .12) + thickness,(height * .57) + thickness), outline=None,fill=(115,103,21))         
+      
      
     
 ##############################################################
@@ -241,7 +240,7 @@ while True:
     #draw.rectangle((0, (height*.75), width, height), outline=0, fill=(rhue,ghue,bhue))
     
     drawGround(width, height, ghue)
-    drawFence(width, height, sectime)
+    drawFence(width, height, sectime, mintime)
     drawSheep(width, height, sectime, rhue, ghue, bhue)
     drawSun(width,height, hrtime)
     

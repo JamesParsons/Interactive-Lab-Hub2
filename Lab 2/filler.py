@@ -87,6 +87,8 @@ def drawSheep(width, height, sectime, rhue, ghue,bhue):
 
 def drawFence(width, height, sectime):
     
+    start = (width*.9)
+    
     if sectime == 1:
         start = width - (width*.1)
     if sectime == 2:

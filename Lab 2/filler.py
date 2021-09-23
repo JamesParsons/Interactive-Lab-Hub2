@@ -65,7 +65,7 @@ def drawSheep(width, height, rhue, ghue,bhue):
     # y+ goes down, x+ goes right
     draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(rhue,ghue,bhue))
     draw.rectangle(((width*.1375),(height*.63)+thickness,(width*.15),(height*.75)), outline=0, fill=(255,255,255)),
-    draw.ellipse(((width * .1),(height * .65),(width * .1) + thickness,(height * .65) + thickness), outline=None,fill=(255,255,255), # LL
+    draw.ellipse(((width * .1),(height * .65),(width * .1) + thickness,(height * .65) + thickness), outline=None,fill=(255,255,255)), # LL
              #canvas.create_oval((width * .1125),(height * .64),(width * .1125) + thickness,(height * .64) + thickness, outline=None,fill="#FFFFFF"), #LM
              #canvas.create_oval((width * .125),(height * .65),(width * .125) + thickness,(height * .65) + thickness, outline=None,fill="#FFFFFF"), #LR
              #canvas.create_oval((width * .1),(height * .60),(width * .1) + thickness,(height * .60) + thickness, outline=None,fill="#FFFFFF"), #UL

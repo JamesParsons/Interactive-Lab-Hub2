@@ -64,6 +64,7 @@ def drawSheep(width, height, sectime, rhue, ghue,bhue):
     
     if sectime == 5:
         height = height - (height*.03)
+        print("jump!")
     
     # y+ goes down, x+ goes right
     draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(255,255,255))

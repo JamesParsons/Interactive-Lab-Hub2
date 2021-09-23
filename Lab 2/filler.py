@@ -55,6 +55,25 @@ x = 0
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 
+#################################################################################
+def drawSheep(width, height, rhue, ghue,bhue):
+    
+    # format is xstart = start x position.   xend = start position + thickness
+    thickness = width * .03
+    offset1 = (width * .0125)
+    
+    # y+ goes down, x+ goes right
+    draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(rhue,ghue,bhue))
+             #canvas.create_rectangle((width*.1375),(height*.63)+thickness,(width*.15),(height*.75), outline="#000000", fill="#FFFFFF"),
+             #canvas.create_oval((width * .1),(height * .65),(width * .1) + thickness,(height * .65) + thickness, outline=None,fill="#FFFFFF"), # LL
+             #canvas.create_oval((width * .1125),(height * .64),(width * .1125) + thickness,(height * .64) + thickness, outline=None,fill="#FFFFFF"), #LM
+             #canvas.create_oval((width * .125),(height * .65),(width * .125) + thickness,(height * .65) + thickness, outline=None,fill="#FFFFFF"), #LR
+             #canvas.create_oval((width * .1),(height * .60),(width * .1) + thickness,(height * .60) + thickness, outline=None,fill="#FFFFFF"), #UL
+             #canvas.create_oval((width * .1125),(height * .59),(width * .1125) + thickness,(height * .59) + thickness, outline=None,fill="#FFFFFF"), #UM
+             #canvas.create_oval((width * .125),(height * .60),(width * .125) + thickness,(height * .60) + thickness, outline=None,fill="#FFFFFF"), #UR
+             #canvas.create_oval((width * .14),(height * .57),(width * .14) + thickness,(height * .57) + thickness, outline=None,fill="#FFFFFF")) 
+##################################################################################
+
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
@@ -93,33 +112,13 @@ while True:
     ghue = mintime * 4    
     bhue = hrtime * 10
     
-    # face
-    draw.ellipse((center-60,center-60,center+60,center+60),outline=(rhue,ghue,bhue), fill=(None))
-    
-    if sectime == 0:
-        #draw.rectangle((0,0,width,height),fill=(0,0,0))
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    
-    if sectime >= 10 and sectime <= 59: # left eye
-        draw.ellipse((center-40,center-40,center-10,center-10),outline=(rhue,ghue,bhue), fill=(None))
-    if sectime >= 20 and sectime <= 59: # right eye
-        draw.ellipse((center+10,center-40,center+40,center-10),outline=(rhue,ghue,bhue), fill=(None))
-    if sectime >= 30 and sectime <= 59: #left ball
-        draw.ellipse((center-32,center-24,center-18,center-10),outline=(rhue,ghue,bhue), fill=(0,0,bhue))
-    if sectime >= 40 and sectime <= 59: # right ball
-        draw.ellipse((center+18,center-24,center+32,center-10),outline=(rhue,ghue,bhue), fill=(0,0,bhue))
-    if sectime >= 50 and sectime <= 59: # lips
-        #draw.arc((center-40,center+10,center+40,center+40),start=1,end=-1,fill=(rhue,0,0),width=3)
-        #draw.arc((center-40,center+10,center+40,center+40),start=.5,end=-.5,fill=(rhue,0,0),width=3)
-        draw.ellipse((center-40,center+10,center+40,center+40),outline=(rhue,ghue,bhue),fill=(rhue,0,0),width=3)
-    # show colors of sec, min, hr on side
-    draw.rectangle((center + 70, 0, width, h1), fill=(rhue,0,0))
-    draw.rectangle((center + 70, h1, width, h2), fill=(0,ghue,0))
-    draw.rectangle((center + 70, h2, width, height), fill=(0,0,bhue))
+
+        #draw.ellipse((center-40,center+10,center+40,center+40),outline=(rhue,ghue,bhue),fill=(rhue,0,0),width=3)
+   
     
     draw.rectangle((0, (height*.75), width, height), outline=0, fill=(rhue,ghue,bhue))
     
-    
+    drawSheep(width, height, rhue, ghue, bhue)
     
     # Display image.
     disp.image(image, rotation)

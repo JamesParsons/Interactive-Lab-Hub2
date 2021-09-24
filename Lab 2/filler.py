@@ -167,6 +167,36 @@ def drawGround(width, height, mintime):
     draw.rectangle((0,(0),width, (height*.75)),outline=None, fill=(90,180,225))
 
 ##############################################################################
+def buttonPressed(width, height, secs, mins, hours):
+    draw.rectangle((0,(0),width, (height)),outline=None, fill=(90,180,225))
+    # secs = 12 * 5   10 * 6
+    # mins = 12 * 5   10 * 6   4 / 4 / 2  within that we need 6 rows by 10 columns
+    # hrs = 12 * 2    2 * 6
+    
+    # secsection = 0 to width * .4 
+    # minsection = width * .4 to width * .8
+    # hrsection = width * .8 to width
+    
+    col = width / 12
+    row = height / 12
+    
+    wd = 0
+    ht = 0
+    wth = col
+    hth = row
+    for x in range(sectime):
+        draw.rectangle((wd,ht,wd + wth, ht + hth),outline=None, fill=(255,255,225))
+        if wd + wth > width:
+            wd = wd + wth
+        elif (wd + wth) == width:
+            wd = 0
+            ht = ht + htw
+            
+        
+    
+    
+    
+##############################################################################
     
 def drawSun(width, height, hrtime):
     
@@ -227,7 +257,8 @@ while True:
     drawSun(width,height, hrtime)
     
     if buttonA.value and not buttonB.value:  # just button B pressed
-        draw.rectangle((0,(0),width, (height*.75)),outline=None, fill=(255,0,0))   
+        buttonPressed(width, height, sectime, mintime, hrtime)
+        #draw.rectangle((0,(0),width, (height*.75)),outline=None, fill=(255,0,0))   
     
     # Display image.
     disp.image(image, rotation)

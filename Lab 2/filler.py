@@ -181,15 +181,16 @@ def buttonPressed(width, height, secs, mins, hours):
     ht = 0
     wth = width / 12
     hth = height / 12
-    print(wth, hth)
-    for x in range(sectime):
-        draw.rectangle((wd,ht,wd + wth, ht + hth),outline=None, fill=(255,255,225))
-        if wd + wth > width:
-            wd = wd + wth
-        elif (wd + wth) == width:
-            wd = 0
-            ht = ht + htw
+    #for x in range(sectime):
+        #draw.rectangle((wd,ht,wd + wth, ht + hth),outline=None, fill=(255,255,225))
+        #if wd + wth > width:
+            #wd = wd + wth
+        #elif (wd + wth) == width:
+            #wd = 0
+            #ht = ht + htw
             
+    if sectime <= 12:
+        draw.rectangle((wd*sectime,ht,wd*sectime + wth, ht + hth),outline=None, fill=(255,255,225))
         
     
     

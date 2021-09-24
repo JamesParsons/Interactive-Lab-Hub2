@@ -115,7 +115,7 @@ def drawFence(width, height, sectime, mintime):
     if sectime == 0:
         start = width - (width*.3)
         
-    mintime - 58
+    mintime - 59
         
     if mintime >= 0 and mintime < 58:   
         draw.rectangle(((start), (height*.63), (start + 20), (height*.75)), outline=0, fill=(45,55,195))

@@ -167,32 +167,21 @@ def drawGround(width, height, mintime):
     draw.rectangle((0,(0),width, (height*.75)),outline=None, fill=(90,180,225))
 
 ##############################################################################
-def buttonPressed(width, height, secs, mins, hours):
-    draw.rectangle((0,(0),width, (height)),outline=None, fill=(90,180,225))
-    # secs = 12 * 5   10 * 6
-    # mins = 12 * 5   10 * 6   4 / 4 / 2  within that we need 6 rows by 10 columns
-    # hrs = 12 * 2    2 * 6
+def buttonPressed(width, height, secs, mins, hours, red, green, blue):
+       
+    wstart = (width * .05)
+    hstart = (height * .1)
+    wend = wstart + (width * .05)
+    hend = hstart + (height * .1)
     
-    # secsection = 0 to width * .4 
-    # minsection = width * .4 to width * .8
-    # hrsection = width * .8 to width
-    
-    wd = 0
-    ht = 0
-    wth = width / 12
-    hth = height / 12
-    #for x in range(sectime):
-        #draw.rectangle((wd,ht,wd + wth, ht + hth),outline=None, fill=(255,255,225))
-        #if wd + wth > width:
-            #wd = wd + wth
-        #elif (wd + wth) == width:
-            #wd = 0
-            #ht = ht + htw
+    secpos = (width / 60)  * secs
+    minpos = (width / 60) * mins
+    hrpos = (width / 24) * hours
             
-    if sectime <= 12:
-        draw.rectangle(((width-(wth*sectime)-wth),ht,(width - (wth*sectime)), ht + hth),outline=None, fill=(255,255,225))
-        print((width-(wth*sectime)-wth), width - (wth*sectime))
-    
+    #secs
+    draw.rectangle((secpos+wstart,hstart,secpos+wend,hend),outline=None, fill=(red,0,0))
+    draw.rectangle((minpos+wstart,hstart+(height*.4),minpos+wend,hend+(height*.4)),outline=None, fill=(0,green,0))  
+    draw.rectangle((hrpos+wstart,hstart+(height*.8),hrpos+wend,hend+(height*.8)),outline=None, fill=(0,0,blue))
     
 ##############################################################################
     
@@ -255,7 +244,7 @@ while True:
     drawSun(width,height, hrtime)
     
     if buttonA.value and not buttonB.value:  # just button B pressed
-        buttonPressed(width, height, sectime, mintime, hrtime)
+        buttonPressed(width, height, sectime, mintime, hrtime, rhue, ghue, bhue)
         #draw.rectangle((0,(0),width, (height*.75)),outline=None, fill=(255,0,0))   
     
     # Display image.

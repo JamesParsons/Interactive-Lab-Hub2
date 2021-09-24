@@ -134,6 +134,7 @@ def drawFence(width, height, sectime, mintime):
 
 def drawGround(width, height, mintime):
     
+    minute = mintime
     ghue = 120
     #want the grass to get brighter green then darker again
     if minute >= 0 and minute < 30:

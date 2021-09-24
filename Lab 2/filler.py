@@ -154,6 +154,8 @@ def drawGround(width, height, mintime):
     
 def drawSun(width, height, hrtime):
     
+    hrtime = 17
+    
     # sun gets brighter towards noon, darker towards 6 pm
     if hrtime >= 6 and hrtime < 12:
         shue = 171 + (hrtime * 14)

@@ -179,9 +179,9 @@ def buttonPressed(width, height, secs, mins, hours, red, green, blue):
     hrpos = (width / 24) * hours
             
     #secs, mins, hours blocks
-    draw.rectangle((secpos+wstart,hstart,secpos+wend,hend),outline=None, fill=(red,0,0))
-    draw.rectangle((minpos+wstart,hstart+(height*.3),minpos+wend,hend+(height*.3)),outline=None, fill=(0,green,0))  
-    draw.rectangle((hrpos+wstart,hstart+(height*.8),hrpos+wend,hend+(height*.8)),outline=None, fill=(0,0,blue))
+    draw.rectangle((secpos+wstart,hstart,secpos+wend,hend),outline=None, fill=(255,0,0))
+    draw.rectangle((minpos+wstart,hstart+(height*.3),minpos+wend,hend+(height*.3)),outline=None, fill=(0,255,0))  
+    draw.rectangle((hrpos+wstart,hstart+(height*.8),hrpos+wend,hend+(height*.8)),outline=None, fill=(0,0,255))
     
 ##############################################################################
     

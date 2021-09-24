@@ -84,11 +84,6 @@ def drawSheep(width, height, sectime):
     draw.ellipse(((width * .125),(height * .60),(width * .125) + thickness,(height * .60) + thickness), outline=None,fill=(255,255,255)), #UR
     draw.ellipse(((width * .14),(height * .57),(width * .14) + thickness,(height * .57) + thickness), outline=None,fill=(255,255,255)) 
 ##################################################################################
-    
-#################################################################################
-
-    
-#################################################################################
 
 #############################################################################
 
@@ -134,21 +129,20 @@ def drawFence(width, height, sectime, mintime):
         draw.ellipse(((width * .1125)+start,(height * .59),(width * .1125)+start + thickness,(height * .59) + thickness), outline=None,fill=(115,103,21)), #UM
         draw.ellipse(((width * .125)+start,(height * .60),(width * .125)+start + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UR
         draw.ellipse(((width * .1)+start,(height * .57),(width * .12)+start + thickness,(height * .57) + thickness), outline=None,fill=(115,103,21))         
-      
-    
-    
+        
 ##############################################################
 
-def drawGround(width, height, ghue):
+def drawGround(width, height, mintime):
     
-    # want the grass to get brighter green then darker again
-    #if minute >= 0 and minute < 30:
-        #groundhue = 120 + (minute * 4)
-    #else:
-        #midstep = minute - 30
-        #groundhue = 240 - (midstep * 4)
+    ghue = 120
+    #want the grass to get brighter green then darker again
+    if minute >= 0 and minute < 30:
+        ghue = 120 + (minute * 4)
+    else:
+        midstep = minute - 30
+        ghue = 240 - (midstep * 4)
            
-    #hexcolor = "#%02x%02x%02x" % (0, groundhue, 0) 
+  
     #ground
     draw.rectangle((0,(height * .75),width, height),outline=None, fill=(0,ghue,0))
     #sky
@@ -157,8 +151,28 @@ def drawGround(width, height, ghue):
 ##############################################################################
     
 def drawSun(width, height, hrtime):
-    shue = (hrtime *7) + 171  # gets yellow value according to hrtime (it gets brighter)
-    draw.ellipse((width*.85,height*-.25,width*1.15,height*.25), outline=None,fill=(shue,shue,0)), #LR
+    
+    # sun gets brighter towards noon, darker towards 6 pm
+    if hrtime >= 6 and hrtime < 12:
+        shue = 171 + (hrtime * 14)
+        draw.ellipse((width*.85,height*-.25,width*1.15,height*.25), outline=None,fill=(shue,shue,0)) 
+    if hrtime >= 12 and hrtime < 18:
+        midstep = hrtime - 30
+        shue = 171 - (midstep * 14)
+        draw.ellipse((width*.85,height*-.25,width*1.15,height*.25), outline=None,fill=(shue,shue,0)) 
+        
+    # moon gets darker towards midnight and brighter towards 6 am
+    if hrtime >= 0 and hrtime < 6:
+        shue = 158 - (hrtime * 7)
+        draw.ellipse((width*.85,height*-.25,width*1.15,height*.25), outline=None,fill=(shue,shue,shue))
+        
+    if hrtime >= 18 and hrtime < 24:
+        hourmidstep = hrtime - 18
+        shue = 158 + (hourmidstep * 7)
+        draw.ellipse((width*.85,height*-.25,width*1.15,height*.25), outline=None,fill=(shue,shue,shue)) 
+    
+    #shue = (hrtime *7) + 171  # gets yellow value according to hrtime (it gets brighter)
+    #draw.ellipse((width*.85,height*-.25,width*1.15,height*.25), outline=None,fill=(shue,shue,0)), #LR
     
 ##########################################################
 
@@ -169,19 +183,6 @@ backlight.value = True
 
 ####################################################
 
-# calculate these values once instead of inside the timer
-q1 = width / 4
-q2 = (width / 4) * 2
-q3 = (width / 4) * 3
-
-h1 = height / 3
-h2 = (height / 3) * 2
-
-if width > height:
-    bounder = height
-else:
-    bounder = width
-center = bounder / 2
 
 #####################################################
 
@@ -200,15 +201,9 @@ while True:
     
     rhue = sectime * 4
     ghue = (mintime * 2) + 120   
-    bhue = hrtime * 10
+    bhue = hrtime * 10    
     
-
-        #draw.ellipse((center-40,center+10,center+40,center+40),outline=(rhue,ghue,bhue),fill=(rhue,0,0),width=3)
-   
-    
-    #draw.rectangle((0, (height*.75), width, height), outline=0, fill=(rhue,ghue,bhue))
-    
-    drawGround(width, height, ghue)
+    drawGround(width, height, mintime)
     drawFence(width, height, sectime, mintime)
     drawSheep(width, height, sectime)
     drawSun(width,height, hrtime)
@@ -216,3 +211,13 @@ while True:
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

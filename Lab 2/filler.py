@@ -73,6 +73,7 @@ def drawSheep(width, height, sectime):
     if sectime == 8:
         height = height - (height*.1)        
     
+    # Sheep
     # y+ goes down, x+ goes right
     draw.rectangle(((width*.1125), (height*.63)+thickness, (width*.125), (height*.75)), outline=0, fill=(255,255,255)) #LLeg
     draw.rectangle(((width*.1375),(height*.63)+thickness,(width*.15),(height*.75)), outline=0, fill=(255,255,255)),  #RLeg
@@ -82,7 +83,7 @@ def drawSheep(width, height, sectime):
     draw.ellipse(((width * .1),(height * .60),(width * .1) + thickness,(height * .60) + thickness), outline=None,fill=(255,255,255)), #UL
     draw.ellipse(((width * .1125),(height * .59),(width * .1125) + thickness,(height * .59) + thickness), outline=None,fill=(255,255,255)), #UM
     draw.ellipse(((width * .125),(height * .60),(width * .125) + thickness,(height * .60) + thickness), outline=None,fill=(255,255,255)), #UR
-    draw.ellipse(((width * .1)- thickness,(height * .57),(width * .1) + thickness,(height * .57) + thickness), outline=None,fill=(255,255,255))  # Head
+    draw.ellipse(((width * .14),(height * .57),(width * .14) + thickness,(height * .57) + thickness), outline=None,fill=(255,255,255))  # Head
 ##################################################################################
 
 #############################################################################

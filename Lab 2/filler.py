@@ -191,8 +191,7 @@ def buttonPressed(width, height, secs, mins, hours):
             
     if sectime <= 12:
         draw.rectangle((wd*sectime,ht,wd*sectime + wth, ht + hth),outline=None, fill=(255,255,225))
-        
-    
+        print(wd*sectime)
     
     
 ##############################################################################

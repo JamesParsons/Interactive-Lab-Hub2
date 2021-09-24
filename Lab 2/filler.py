@@ -177,13 +177,11 @@ def buttonPressed(width, height, secs, mins, hours):
     # minsection = width * .4 to width * .8
     # hrsection = width * .8 to width
     
-    col = width / 12
-    row = height / 12
-    
     wd = 0
     ht = 0
-    wth = col
-    hth = row
+    wth = width / 12
+    hth = row / 12
+    print(wth, hth)
     for x in range(sectime):
         draw.rectangle((wd,ht,wd + wth, ht + hth),outline=None, fill=(255,255,225))
         if wd + wth > width:

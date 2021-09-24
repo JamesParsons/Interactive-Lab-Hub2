@@ -115,12 +115,14 @@ def drawFence(width, height, sectime, mintime):
     if sectime == 0:
         start = width - (width*.3)
         
-    if mintime >= 0 and mintime < 50:   
+    mintime - 58
+        
+    if mintime >= 0 and mintime < 58:   
         draw.rectangle(((start), (height*.63), (start + 20), (height*.75)), outline=0, fill=(45,55,195))
    
-    if mintime >= 50 and mintime < 60:
+    if mintime >= 58 and mintime < 60:
     # y+ goes down, x+ goes right
-        #print(mintime)
+        # Wolf
         draw.rectangle(((width*.1125)+start, (height*.63)+thickness, (width*.125)+start, (height*.75)), outline=0, fill=(115,103,21))
         draw.rectangle(((width*.1375)+start,(height*.63)+thickness,(width*.15)+start,(height*.75)), outline=0, fill=(115,103,21)),
         draw.ellipse(((width * .1)+start,(height * .65),(width * .1)+start + thickness,(height * .65) + thickness), outline=None,fill=(115,103,21)), # LL
@@ -153,8 +155,6 @@ def drawGround(width, height, mintime):
 ##############################################################################
     
 def drawSun(width, height, hrtime):
-    
-    hrtime = 22
     
     # sun gets brighter towards noon, darker towards 6 pm
     if hrtime >= 6 and hrtime < 12:

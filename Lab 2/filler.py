@@ -131,7 +131,7 @@ def drawFence(width, height, sectime, mintime):
         draw.ellipse(((width * .1)+start,(height * .60),(width * .1)+start + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UL
         draw.ellipse(((width * .1125)+start,(height * .59),(width * .1125)+start + thickness,(height * .59) + thickness), outline=None,fill=(115,103,21)), #UM
         draw.ellipse(((width * .125)+start,(height * .60),(width * .125)+start + thickness,(height * .60) + thickness), outline=None,fill=(115,103,21)), #UR
-        draw.ellipse(((width * .1)+start,(height * .57),(width * .12)+start + thickness,(height * .57) + thickness), outline=None,fill=(115,103,21))         
+        draw.ellipse(((width * .1)-start,(height * .57),(width * .12)-start + thickness,(height * .57) + thickness), outline=None,fill=(115,103,21))         
         
 ##############################################################
 

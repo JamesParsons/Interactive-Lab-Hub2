@@ -4,6 +4,8 @@ import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
+import webcolors
+
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
@@ -28,6 +30,19 @@ disp = st7789.ST7789(
     x_offset=53,
     y_offset=40,
 )
+
+#########################################################################
+
+# these setup the code for our buttons and the backlight and tell the pi to treat the GPIO pins as digitalIO vs analogIO
+backlight = digitalio.DigitalInOut(board.D22)
+backlight.switch_to_output()
+backlight.value = True
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonB.switch_to_input()
+
+####################################################################
 
 # Create blank image for drawing.
 # Make sure to create image with mode 'RGB' for full color.
@@ -114,8 +129,7 @@ def drawFence(width, height, sectime, mintime):
         start = width - (width*.2)
     if sectime == 0:
         start = width - (width*.3)
-        
-    mintime = 59
+
         
     if mintime >= 0 and mintime < 58:   
         draw.rectangle(((start), (height*.63), (start + 20), (height*.75)), outline=0, fill=(45,55,195))
@@ -211,6 +225,9 @@ while True:
     drawFence(width, height, sectime, mintime)
     drawSheep(width, height, sectime)
     drawSun(width,height, hrtime)
+    
+    if buttonA.value and not buttonB.value:  # just button B pressed
+        draw.rectangle((0,(0),width, (height*.75)),outline=None, fill=(90,180,225))   
     
     # Display image.
     disp.image(image, rotation)

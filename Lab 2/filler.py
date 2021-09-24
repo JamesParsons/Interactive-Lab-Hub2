@@ -180,7 +180,7 @@ def buttonPressed(width, height, secs, mins, hours):
     wd = 0
     ht = 0
     wth = width / 12
-    hth = row / 12
+    hth = height / 12
     print(wth, hth)
     for x in range(sectime):
         draw.rectangle((wd,ht,wd + wth, ht + hth),outline=None, fill=(255,255,225))

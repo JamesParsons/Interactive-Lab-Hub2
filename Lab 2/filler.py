@@ -234,6 +234,9 @@ while True:
     
     sectime = sectime%10
     
+    mintime = 58
+    hrtime = 23
+    
     rhue = sectime * 4
     ghue = (mintime * 2) + 120   
     bhue = hrtime * 10    

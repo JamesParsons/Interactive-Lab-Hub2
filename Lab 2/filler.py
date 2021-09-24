@@ -227,7 +227,7 @@ while True:
     drawSun(width,height, hrtime)
     
     if buttonA.value and not buttonB.value:  # just button B pressed
-        draw.rectangle((0,(0),width, (height*.75)),outline=None, fill=(90,180,225))   
+        draw.rectangle((0,(0),width, (height*.75)),outline=None, fill=(255,0,0))   
     
     # Display image.
     disp.image(image, rotation)

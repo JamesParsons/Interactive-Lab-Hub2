@@ -229,3 +229,17 @@ As always, make sure you document contributions and ideas from others explicitly
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
 
 
+
+The new interface with the sheep jumping over a fence.  The sun and ground change hue's depending on time of day.  The sun gets brighter from 6am to noon then darker again from noon to 6pm.  At 6pm it changes to a moon wich gets darker towards midnight and brighter again towards 6am (when it turns back into the sun).  During the last two minutes of every hour the fence turns into a wolf.  Also, when you press the button the squares (red for seconds, green for minute, and blue for hour appear).  How far they are across the screen indicates the current time.
+
+https://user-images.githubusercontent.com/89811189/134777824-fdfc5e43-e536-4532-b9d2-3ebdf7cc9f69.mp4
+
+Button press:
+https://user-images.githubusercontent.com/89811189/134777819-4927228f-600e-46e0-a290-31fc675c3c7e.mp4
+
+Moon with the wolf:
+https://user-images.githubusercontent.com/89811189/134777821-e90131d7-f43d-405d-abf6-a4ddda8dc3dd.mp4
+
+
+
+

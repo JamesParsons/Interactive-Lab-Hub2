@@ -18,7 +18,7 @@ voices = engine.getProperty('voices')
 x = 0
 for voice in voices:
     engine.setProperty('voice', voice.id)
-    engine.say('this voice number is' + x)
+    engine.say('this voice number is' + str(x))
     x = x + 1
 
 

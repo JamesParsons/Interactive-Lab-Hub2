@@ -8,7 +8,7 @@ engine = pyttsx3.init()
 
 # RATE
 rate = engine.getProperty('rate')
-engine.setProperty('rate', 80)   # slower is lower number
+engine.setProperty('rate', 125)   # slower is lower number
 
 # VOICE
 voices = engine.getProperty('voices')

@@ -1,3 +1,6 @@
 
+import pyttsx3
 
-espeak "Hello Say ler" 2>/dev/null
+engine = pyttsx3.init()
+engine.say("Hello say ler")
+engine.runAndWait()

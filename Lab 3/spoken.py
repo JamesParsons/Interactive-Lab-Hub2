@@ -1,6 +1,6 @@
 
 from gtts import gTTS
-from playsound import playsound
+#from playsound import playsound
 import os
 
 #Message = "Hello"
@@ -9,7 +9,7 @@ import os
 #playsound('testsound.mp3')
 
 text = "Hello!"
-tts = gTTS(text)
-#tts.save("hi.mp3")
+tts = gTTS(text, lang='en')
+tts.save("hi.mp3")
 
-os.system("hi.mp3")
+os.system("mpg321 hi.mp3")

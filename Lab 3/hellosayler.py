@@ -11,7 +11,7 @@ rate = engine.getProperty('rate')
 engine.setProperty('rate', 80)   # slower is lower number
 
 # VOICE
-voices = engine.getPRoperty('voices')
+voices = engine.getProperty('voices')
 #engine.setProperty('voice', voices[0].id) #male
 engine.setProperty('voice', voices[1].id) #female
 

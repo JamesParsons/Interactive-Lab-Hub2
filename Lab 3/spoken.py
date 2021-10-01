@@ -12,4 +12,4 @@ text = "Hello!"
 tts = gTTS(text, lang='en')
 tts.save("hi.mp3")
 
-os.system("mpg321 hi.mp3")
+os.system("hi.mp3")

@@ -12,7 +12,8 @@ engine.setProperty('rate', 125)   # slower is lower number
 
 # VOICE
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[11].id) #male
+#engine.setProperty('voice', voices[11].id) #male
+engine.setProperty('voice', 'english_rp+f3')
 #engine.setProperty('voice', voices[1].id) #male australian?
 
 #x = 0
